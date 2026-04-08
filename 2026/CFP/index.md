@@ -1,6 +1,11 @@
-# Call for Contributions  
+---
+layout: default
+title: Call for Contributions
+---
+
+# Llamado a Contribuciones
 ## 3ª Jornada Chilena de Ciberseguridad en Salud  
-**“Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario”**
+**“Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema de Salud**
 
 📍 Universidad de los Andes, Santiago, Chile  
 📅 12 de agosto de 2026  
@@ -110,10 +115,10 @@ Los trabajos seleccionados:
 
 ## 9. Fechas Importantes *(tentativas)*
 
-- Apertura del llamado: por confirmar  
-- Cierre de postulaciones: por confirmar  
-- Notificación de resultados: por confirmar  
-- Evento: **12 de agosto de 2026**
+- Apertura del llamado: lunes 13 de abril
+- Cierre de postulaciones: viernes 29 de mayo  
+- Notificación de resultados: lunes 22 de junio
+- Evento: **miércoles 12 de agosto de 2026**
 
 ---
 

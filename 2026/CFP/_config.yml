@@ -1,0 +1,11 @@
+title: "3ª Jornada Chilena de Ciberseguridad en Salud"
+description: "Call for Contributions — Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario"
+theme: jekyll-theme-cayman
+
+lang: es
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+
+show_downloads: false
