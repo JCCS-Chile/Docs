@@ -63,6 +63,7 @@ Podrán postular:
 - Responsables de ciberseguridad, privacidad o compliance
 - Investigadores en salud digital o ciberseguridad
 - Estudiantes de postgrado
+- Tesistas de pregrado
 - Profesionales de la industria tecnológica
 
 ---
