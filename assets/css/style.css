@@ -1,0 +1,10 @@
+@import "{{ site.theme }}";
+
+.page-header {
+  display: none;
+}
+
+.main-content {
+  max-width: 64rem;
+  padding-top: 2rem;
+}
