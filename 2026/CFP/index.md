@@ -16,7 +16,7 @@ title: Call for Contributions
 
 En un contexto marcado por nuevas exigencias regulatorias, el fortalecimiento del marco nacional de ciberseguridad y el avance de la interoperabilidad en salud, las instituciones del ecosistema de salud enfrentan desafíos crecientes en protección de datos, continuidad asistencial y gobernanza digital.
 
-La **3ª Jornada Chilena de Ciberseguridad en Salud** convoca a profesionales, investigadores y actores del ecosistema sanitario a compartir experiencias, resultados de investigación y casos aplicados que contribuyan al desarrollo de capacidades en ciberseguridad en salud.
+La **3ª Jornada Chilena de Ciberseguridad en Salud** convoca a profesionales, investigadores y actores del ecosistema de salud a compartir experiencias, resultados de investigación y casos aplicados que contribuyan al desarrollo de capacidades en ciberseguridad en salud.
 
 ---
 
@@ -90,7 +90,7 @@ Las propuestas deberán enviarse mediante formulario online e incluir:
 
 Las propuestas serán evaluadas por el Comité Científico considerando:
 
-- Relevancia para el contexto sanitario chileno  
+- Relevancia para el contexto del ecosistema de salud chileno  
 - Aplicabilidad práctica  
 - Rigor metodológico  
 - Originalidad  
@@ -98,17 +98,7 @@ Las propuestas serán evaluadas por el Comité Científico considerando:
 
 ---
 
-## 8. Resultados de la Convocatoria
-
-Los trabajos seleccionados:
-
-- Serán presentados como lightning talk o poster  
-- Formarán parte de las actas del evento (sujeto a confirmación)  
-- Contribuirán a la elaboración de un documento de recomendaciones sectoriales  
-
----
-
-## 9. Fechas Importantes *(tentativas)*
+## 8. Fechas Importantes *(tentativas)*
 
 - Apertura del llamado: lunes 13 de abril
 - Cierre de postulaciones: viernes 29 de mayo  
@@ -117,7 +107,7 @@ Los trabajos seleccionados:
 
 ---
 
-## 10. Comité Científico
+## 9. Comité Científico
 
 El Comité Científico estará compuesto por especialistas de distintas áreas, incluyendo:
 
@@ -131,7 +121,7 @@ Su objetivo es garantizar rigor técnico, relevancia sectorial y diversidad de p
 
 ---
 
-## 11. Envío de Propuestas
+## 10. Envío de Propuestas
 
 Las postulaciones deberán realizarse a través del formulario oficial del evento:
 
@@ -139,7 +129,7 @@ Las postulaciones deberán realizarse a través del formulario oficial del event
 
 ---
 
-## 12. Contacto
+## 11. Contacto
 
 Para consultas, contactar al comité organizador de la Jornada al correo jccs.contacto@proton.me
 
