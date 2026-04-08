@@ -47,16 +47,10 @@ Se aceptan propuestas en dos modalidades:
 Las contribuciones deben enmarcarse en uno o más de los siguientes ejes:
 
 - Gobernanza y cumplimiento regulatorio en salud
-- Implementación de la Ley Marco de Ciberseguridad
-- Protección de datos personales en salud
-- Interoperabilidad segura de sistemas clínicos
-- Gestión de identidad y control de acceso
 - Resiliencia digital y continuidad asistencial
-- Gestión de incidentes y respuesta ante ransomware
-- Seguridad en sistemas clínicos e infraestructura crítica
+- Interoperabilidad segura de sistemas clínicos
+- Protección de datos personales en salud
 - Inteligencia artificial y ciberseguridad en salud
-- Uso secundario de datos y anonimización
-- Gestión de riesgos en organizaciones sanitarias
 
 ---
 
