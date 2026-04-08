@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cfp
 title: Call for Contributions
 ---
 
