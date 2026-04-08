@@ -1,3 +1,6 @@
+---
+---
+
 @import "{{ site.theme }}";
 
 .page-header {
@@ -6,5 +9,6 @@
 
 .main-content {
   max-width: 64rem;
-  padding-top: 2rem;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem 2rem;
 }
