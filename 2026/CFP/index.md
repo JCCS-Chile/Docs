@@ -46,6 +46,7 @@ Las contribuciones deben enmarcarse en uno o más de los siguientes ejes:
 - Resiliencia digital y continuidad asistencial
 - Interoperabilidad segura de sistemas clínicos
 - Protección de datos personales en salud
+- Uso secundario de información en salud
 - Inteligencia artificial y ciberseguridad en salud
 
 ---
