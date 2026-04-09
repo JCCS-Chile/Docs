@@ -94,7 +94,7 @@ Las propuestas serán evaluadas por el Comité Científico considerando:
 
 ---
 
-## 8. Fechas Importantes *(tentativas)*
+## 8. Fechas Importantes
 
 - Apertura del llamado: lunes 13 de abril
 - Cierre de postulaciones: viernes 29 de mayo  
@@ -130,3 +130,7 @@ Las postulaciones deberán realizarse a través del formulario oficial del event
 Para consultas, contactar al comité organizador de la Jornada al correo jccs.contacto@proton.me
 
 ---
+
+<div class="cfp-footer">
+  <img src="{{ '/assets/img/cfp-2026-footer.jpg' | relative_url }}" alt="CFP Header">
+</div>
