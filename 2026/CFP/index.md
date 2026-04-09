@@ -121,7 +121,9 @@ Su objetivo es garantizar rigor técnico, relevancia sectorial y diversidad de p
 
 Las postulaciones deberán realizarse a través del formulario oficial del evento:
 
-[Enlace al formulario](https://inguandes.typeform.com/to/gp4aQlp7)
+<a href="https://inguandes.typeform.com/to/gp4aQlp7" class="cfp-button">
+  Enlace al formulario
+</a>
 
 ---
 

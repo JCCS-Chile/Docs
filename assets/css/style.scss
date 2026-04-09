@@ -50,3 +50,34 @@ $heading-color: rgb(27, 7, 102);
   height: auto;
   display: block;
 }
+
+.cfp-button {
+  display: inline-block;
+  background-color: #1b0766;
+  color: #ffffff !important;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px; // pill shape
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cfp-button:hover {
+  background-color: #2a0c99;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(27, 7, 102, 0.25);
+}
+
+.cfp-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.cfp-button {
+  letter-spacing: 0.02em;
+}
+
+.cfp-button::after {
+  content: " →";
+}
