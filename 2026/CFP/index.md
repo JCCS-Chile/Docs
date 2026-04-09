@@ -1,6 +1,6 @@
 ---
 layout: cfp
-title: Call for Contributions
+title: Llamado a Contribuciones JCCS 2026
 ---
 
 <div class="cfp-hero">
