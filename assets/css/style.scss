@@ -23,3 +23,19 @@ $heading-color: rgb(27, 7, 102);
 .main-content h6 {
   color: $heading-color;
 }
+
+.cfp-hero {
+  margin-bottom: 2rem;
+}
+
+.cfp-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.cfp-hero img,
+.cfp-hero-full img {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}

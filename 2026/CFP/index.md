@@ -3,13 +3,9 @@ layout: cfp
 title: Call for Contributions
 ---
 
-# Llamado a Contribuciones
-## 3ª Jornada Chilena de Ciberseguridad en Salud  
-**"Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema de Salud"**
-
-📍 Universidad de los Andes, Santiago, Chile  
-📅 12 de agosto de 2026  
-
+<div class="cfp-hero">
+  <img src="{{ '/assets/img/cfp-2026-header.jpg' | relative_url }}" alt="CFP Header">
+</div>
 ---
 
 ## 1. Introducción
