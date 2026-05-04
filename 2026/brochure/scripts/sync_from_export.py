@@ -5,14 +5,12 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / "jccs-2026-site"
 TARGET = ROOT
+PUBLIC = TARGET / "public"
 
 COPY_MAP = {
-    SOURCE / "_next/static/css": TARGET / "assets/css",
-    SOURCE / "_next/static/chunks": TARGET / "assets/js",
-    SOURCE / "_next/static/chunks/app": TARGET / "assets/js",
-    SOURCE / "_next/static/chunks/pages": TARGET / "assets/js",
-    SOURCE / "_next/static/media": TARGET / "assets/media",
-    SOURCE / "logos": TARGET / "assets/logos",
+    SOURCE / "_next/static/css": PUBLIC / "assets/css",
+    SOURCE / "_next/static/media": PUBLIC / "assets/media",
+    SOURCE / "logos": PUBLIC / "assets/logos",
 }
 
 REPLS = {
@@ -24,12 +22,16 @@ REPLS = {
     '/jccs-2026/logos/': './assets/logos/',
 }
 
+CSS_REPLS = {
+    '/jccs-2026/_next/static/media/': '../media/',
+}
+
 
 def ensure_clean_assets() -> None:
-    assets = TARGET / "assets"
-    if assets.exists():
-        shutil.rmtree(assets)
-    assets.mkdir(parents=True, exist_ok=True)
+    for assets in (TARGET / "assets", PUBLIC / "assets"):
+        if assets.exists():
+            shutil.rmtree(assets)
+        assets.mkdir(parents=True, exist_ok=True)
 
 
 def copy_assets() -> None:
@@ -39,14 +41,20 @@ def copy_assets() -> None:
             raise FileNotFoundError(f"No existe el origen requerido: {src_dir}")
         for path in src_dir.glob("*"):
             if path.is_file():
-                shutil.copy2(path, dst_dir / path.name)
+                dst = dst_dir / path.name
+                shutil.copy2(path, dst)
+                if dst.suffix == ".css":
+                    css = dst.read_text(encoding="utf-8")
+                    for old, new in CSS_REPLS.items():
+                        css = css.replace(old, new)
+                    dst.write_text(css, encoding="utf-8")
 
 
 def generate_index() -> None:
     raw = (SOURCE / "index.html").read_text(encoding="utf-8")
     for old, new in REPLS.items():
         raw = raw.replace(old, new)
-    (TARGET / "index.html").write_text(raw, encoding="utf-8")
+    (TARGET / "legacy-index.html").write_text(raw, encoding="utf-8")
 
 
 def main() -> None:
@@ -55,7 +63,7 @@ def main() -> None:
     ensure_clean_assets()
     copy_assets()
     generate_index()
-    print("Brochure sincronizado en 2026/brochure (index.html + assets/*).")
+    print("Brochure sincronizado en 2026/brochure (public/assets/* + legacy-index.html).")
 
 
 if __name__ == "__main__":

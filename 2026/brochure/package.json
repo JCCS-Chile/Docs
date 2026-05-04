@@ -1,14 +1,27 @@
 {
   "name": "jccs-2026-brochure",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
-  "description": "Herramientas para generar una versión editable del brochure JCCS 2026 sin versionar binarios.",
+  "type": "module",
+  "description": "Brochure JCCS 2026 mantenible con React + Vite sin versionar binarios.",
   "scripts": {
     "sync": "python3 scripts/sync_from_export.py",
-    "start": "npm run sync && npx serve .",
-    "dev": "npm run start"
+    "predev": "npm run sync",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "npm run sync",
+    "build": "vite build",
+    "postbuild": "python3 scripts/prerender_dist.py",
+    "preview": "vite preview --host 127.0.0.1",
+    "serve:legacy": "npm run sync && npx serve ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "serve": "^14.2.4"
+    "@vitejs/plugin-react": "^4.2.1",
+    "serve": "^14.2.4",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0"
   }
 }
