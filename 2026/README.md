@@ -1,53 +1,99 @@
 # JCCS 2026 Site
 
-Este directorio contiene el sitio JCCS 2026 en **Astro + React Islands**, sin versionar binarios ni assets generados.
+Sitio web de la **3ª Jornada Chilena de Ciberseguridad en Salud 2026**.
 
-La home conserva temporalmente el cuerpo heredado de `src/page.html`, extraído desde el `index.html` exportado por Next. Astro aporta el layout común, las rutas del sitio y deja React reservado para islas interactivas pequeñas, como la cuenta regresiva.
+El proyecto está construido con **Astro** y usa **React Islands** sólo para interactividad puntual, como la cuenta regresiva de la home. El sitio se genera como HTML estático en `dist/`.
 
-## Cómo usar
+## Requisitos
+
+- Node.js compatible con Astro 6
+- npm
+
+## Desarrollo
 
 ```bash
-cd 2026
 npm install
-npm run sync
 npm run dev
+```
+
+El servidor local queda disponible en:
+
+```text
+http://127.0.0.1:4321/
+```
+
+## Build
+
+```bash
 npm run build
 ```
 
-## Qué hace `sync`
+El build estático se genera en `dist/`.
 
-El script `scripts/sync_from_export.py`:
+Para revisar el build localmente:
 
-1. Limpia los assets generados.
-2. Copia CSS, fuentes y logos desde `jccs-2026-site`.
-3. Reescribe rutas internas de CSS para que funcionen como assets locales.
-4. Copia las imágenes del CFP hacia `public/CFP/images`.
-5. Genera `legacy-index.html` como referencia del export original sin usarlo como fuente principal.
+```bash
+npm run preview
+```
 
-## Editar la página
+## Arquitectura
 
-- Edita `src/page.html` para cambios directos sobre el cuerpo heredado de la home.
-- Edita `src/components/SiteHeader.astro` y `src/components/SiteFooter.astro` para navegación y footer compartidos.
-- Edita `src/styles/site.css` para ajustes propios del sitio Astro.
-- Usa `scripts/extract_page_html.py` solo si necesitas regenerar `src/page.html` desde el export de Next.
-- `CFP/index.md` y `PRIVACY.md` son las fuentes Markdown de `/CFP/` y `/privacy/`.
-- `npm run build` genera el sitio estático en `dist/`.
+- `src/pages/index.astro` genera la home (`/`).
+- `src/pages/CFP/index.astro` genera el llamado a contribuciones (`/CFP/`).
+- `src/pages/privacy/index.astro` genera la política de privacidad (`/privacy/`).
+- `src/layouts/SiteLayout.astro` define el HTML base, metadata y hojas CSS heredadas.
+- `src/components/SiteHeader.astro` y `src/components/SiteFooter.astro` son compartidos por todas las páginas.
+- `src/components/Countdown.jsx` es la isla React que actualiza la cuenta regresiva.
+- `src/config/site.js` centraliza configuración pública del sitio.
+- `src/styles/site.css` contiene estilos propios del wrapper Astro y ajustes adicionales.
 
-## Notas
+La home todavía conserva parte del HTML heredado en `src/page.html`. `src/pages/index.astro` toma ese contenido y reemplaza el header/footer por componentes Astro compartidos. La intención es migrar gradualmente ese HTML a componentes Astro más pequeños.
 
-- Se evita agregar binarios al PR mediante `.gitignore`.
-- Esta sigue siendo una base puente: desde aquí se pueden ir migrando secciones de `src/page.html` a componentes Astro más pequeños.
+## Contenido
 
-## Configuración del enlace de registro
+- Edita `src/page.html` para cambios puntuales en el cuerpo heredado de la home.
+- Edita `CFP/index.md` para actualizar el contenido del CFP.
+- Edita `PRIVACY.md` para actualizar la política de privacidad.
+- Edita `SiteHeader.astro` y `SiteFooter.astro` para navegación, CTAs globales y footer.
 
-- **Variable:** `PUBLIC_REGISTRATION_SITE` — URL pública al formulario de inscripción (ej. https://inguandes.typeform.com/to/gtDo6MI8#source=xxxxx).
-- **Dónde se usa:** el `SiteHeader` y `SiteFooter` leen esta variable en tiempo de build/cliente y mostrarán un botón `Regístrate` que abre la URL en una nueva pestaña. Si no está definida, se usa el fallback local `CFP/`.
-- **Cómo configurarla (desarrollo):** crea un fichero `.env` en el root con:
+Las imágenes fuente del CFP viven en `CFP/images/`.
+
+## Enlace de registro
+
+El botón `Regístrate` usa la variable pública:
 
 ```env
 PUBLIC_REGISTRATION_SITE=https://inguandes.typeform.com/to/gtDo6MI8#source=xxxxx
 ```
 
-- **Nota:** Astro (Vite) expone sólo las variables con prefijo `PUBLIC_` al cliente. Reinicia el servidor de desarrollo (`npm run dev`) después de cambiar `.env`.
-- **Producción:** configura la variable de entorno `PUBLIC_REGISTRATION_SITE` en tu proveedor de hosting (Netlify, Vercel, etc.) para que la URL esté disponible en el build.
-- **Ejemplo:** ya existe un `.env.example` con el valor de ejemplo.
+En desarrollo, crea un archivo `.env` en la raíz. Hay un `.env.example` como referencia.
+
+Si `PUBLIC_REGISTRATION_SITE` no está definida, el sitio usa `/CFP/` como fallback. Astro sólo expone al cliente variables con prefijo `PUBLIC_`; reinicia `npm run dev` después de cambiar `.env`.
+
+En producción, configura `PUBLIC_REGISTRATION_SITE` en el proveedor de hosting antes del build.
+
+## Deploy en GitHub Pages
+
+El workflow `.github/workflows/deploy-pages.yml` publica el sitio en GitHub Pages al hacer push a `main`.
+
+- El sitio 2026 se compila desde este directorio y se publica bajo `/Docs/2026/`.
+- El workflow usa `PUBLIC_BASE_PATH=/Docs/2026/` para que Astro genere rutas correctas de assets.
+- `PUBLIC_REGISTRATION_SITE` se lee desde **Settings → Secrets and variables → Actions → Variables** como variable de repositorio.
+- Si no configuras `PUBLIC_REGISTRATION_SITE`, el sitio usa `/CFP/` como fallback para registro.
+
+En GitHub Pages, configura el source como **GitHub Actions**.
+
+## Archivos generados
+
+No se versionan:
+
+- `node_modules/`
+- `.astro/`
+- `dist/`
+- `public/assets/`
+- `public/CFP/images/`
+- `legacy-index.html`
+
+## Guía para agentes
+
+Las instrucciones operativas para herramientas como Codex, Claude u otros agentes están en `AGENTS.md`.

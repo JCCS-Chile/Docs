@@ -5,3 +5,4 @@
 /public/CFP/images/
 /public/assets/
 /.astro/
+.env
