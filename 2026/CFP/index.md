@@ -134,6 +134,3 @@ La política de privacidad del evento está disponible en [Política de Ciberseg
 
 ---
 
-<div class="cfp-footer">
-  <img src="./images/cfp-form-splash-2026.jpg" alt="CFP Formulario">
-</div>
