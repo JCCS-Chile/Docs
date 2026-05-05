@@ -3,7 +3,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Countdown from "../components/Countdown.jsx";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { contactEmail } from "../config/site.js";
+import { contactEmail, registrationSite } from "../config/site.js";
 import pageHtml from "../page.html?raw";
 
 const escapeHtml = (value) => value
@@ -13,11 +13,15 @@ const escapeHtml = (value) => value
   .replace(/"/g, "&quot;");
 
 const applySiteConfig = (html) => {
+  const withRegistration = registrationSite
+    ? html.replaceAll("__PUBLIC_REGISTRATION_SITE__", escapeHtml(registrationSite))
+    : html.replace(/<a\s+href="__PUBLIC_REGISTRATION_SITE__"[\s\S]*?<\/a>/g, "");
+
   if (!contactEmail) {
-    return html.replace(/<a href="mailto:__PUBLIC_CONTACT_EMAIL__"[\s\S]*?<\/a>/g, "");
+    return withRegistration.replace(/<a href="mailto:__PUBLIC_CONTACT_EMAIL__"[\s\S]*?<\/a>/g, "");
   }
 
-  return html.replaceAll("__PUBLIC_CONTACT_EMAIL__", escapeHtml(contactEmail));
+  return withRegistration.replaceAll("__PUBLIC_CONTACT_EMAIL__", escapeHtml(contactEmail));
 };
 
 const homeContent = applySiteConfig(pageHtml)
