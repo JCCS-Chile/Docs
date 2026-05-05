@@ -1,0 +1,20 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { markdownToHtml } from "../../utils/markdown.js";
+import privacyMarkdown from "../../../PRIVACY.md?raw";
+
+const title = "Política de Ciberseguridad, Privacidad y Protección de Datos";
+const privacyHtml = markdownToHtml(privacyMarkdown);
+---
+
+<SiteLayout basePath="../" title={`${title} — JCCS 2026`}>
+  <main class="relative document-shell">
+    <SiteHeader basePath="../" />
+    <section class="document-page">
+      <article class="document-content" aria-label={title} set:html={privacyHtml} />
+    </section>
+    <SiteFooter basePath="../" />
+  </main>
+</SiteLayout>

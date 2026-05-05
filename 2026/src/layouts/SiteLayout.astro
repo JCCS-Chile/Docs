@@ -1,0 +1,32 @@
+---
+import "../styles/site.css";
+
+const {
+  basePath = "./",
+  description = "Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario. 12 de agosto 2026 · Universidad de los Andes · Las Condes, Santiago.",
+  title = "JCCS 2026 — 3ª Jornada Chilena de Ciberseguridad en Salud",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="__variable_33c280 __variable_a360ee __variable_93e2b9">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="ciberseguridad,salud,Chile,JCCS,jornada,2026" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="stylesheet" href={`${basePath}assets/css/ce44b9cb79c3c418.css`} />
+    <link rel="stylesheet" href={`${basePath}assets/css/7625b12416c75fb2.css`} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

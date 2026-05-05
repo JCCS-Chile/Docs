@@ -1,0 +1,20 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { markdownToHtml } from "../../utils/markdown.js";
+import cfpMarkdown from "../../../CFP/index.md?raw";
+
+const title = "Llamado a Contribuciones JCCS 2026";
+const cfpHtml = markdownToHtml(cfpMarkdown);
+---
+
+<SiteLayout basePath="../" title={`${title} — JCCS 2026`}>
+  <main class="relative document-shell">
+    <SiteHeader basePath="../" />
+    <section class="document-page">
+      <article class="document-content" aria-label={title} set:html={cfpHtml} />
+    </section>
+    <SiteFooter basePath="../" />
+  </main>
+</SiteLayout>

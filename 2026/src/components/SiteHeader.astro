@@ -1,0 +1,45 @@
+---
+const { basePath = "./" } = Astro.props;
+
+import { registrationSite } from '../config/site.js';
+
+const homeHref = basePath;
+const navItems = [
+  ["La Jornada", `${basePath}#sobre`],
+  ["Programa", `${basePath}#programa`],
+  ["Temas", `${basePath}#temas`],
+  ["Contribuye", `${basePath}CFP/`],
+  ["Sede", `${basePath}#sede`],
+];
+---
+
+<header class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-sm py-4">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
+    <a href={homeHref} class="flex items-center gap-3 group">
+      <div class="w-9 h-9 bg-gradient-to-br from-brand-800 to-accent-500 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-shield w-5 h-5 text-white">
+          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="font-display font-bold text-brand-900 leading-none text-[17px] tracking-tight">
+          JCCS <span class="text-accent-500">2026</span>
+        </div>
+        <div class="font-mono text-[9px] text-slate-400 tracking-[0.15em] uppercase leading-none mt-0.5">
+          Ciberseguridad en Salud
+        </div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-6">
+      {navItems.map(([label, href]) => <a href={href} class="nav-link font-body">{label}</a>)}
+    </nav>
+    <div class="flex items-center gap-3">
+      {registrationSite
+        ? <a href={registrationSite} class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5" target="_blank" rel="noopener noreferrer">Regístrate</a>
+        : <a href={`${basePath}CFP/`} class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5">Regístrate</a>
+      }
+    </div>
+  </div>
+</header>

@@ -1,0 +1,84 @@
+---
+const { basePath = "./" } = Astro.props;
+
+import { registrationSite } from '../config/site.js';
+
+const navItems = [
+  ["La Jornada", `${basePath}#sobre`],
+  ["Temas", `${basePath}#temas`],
+  ["Programa", `${basePath}#programa`],
+  ["Convocatoria", `${basePath}#convocatoria`],
+  ["Sede", `${basePath}#sede`],
+];
+
+const logos = [
+  ["Universidad de los Andes", "uandes.png", ""],
+  ["Universidad del Desarrollo", "udd.png", ""],
+  ["ITiSB — Universidad Andrés Bello", "itisb-unab-whiteonblack.png", ""],
+  ["Clínica Alemana", "clinica-alemana-whiteonblack.png", ""],
+  ["Alianza Chilena de Ciberseguridad", "acc-whiteonblack.png", ""],
+];
+---
+
+<footer class="bg-brand-900 text-white">
+  <div class="h-1 bg-gradient-to-r from-accent-600 via-accent-400 to-accent-600"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-shield w-5 h-5 text-white">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-white text-lg leading-none">JCCS <span class="text-accent-300">2026</span></div>
+            <div class="font-mono text-[9px] text-white/40 tracking-[0.15em] uppercase mt-0.5">Ciberseguridad en Salud</div>
+          </div>
+        </div>
+        <p class="font-body text-sm text-white/60 leading-relaxed max-w-sm mb-5">
+          <em>&quot;Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario&quot;</em>
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 bg-white/10 text-white/70 rounded-full text-[10px] font-mono tracking-wide">12 AGO 2026</span>
+          <span class="px-3 py-1.5 bg-white/10 text-white/70 rounded-full text-[10px] font-mono tracking-wide">U. de los Andes · Santiago</span>
+        </div>
+      </div>
+      <div>
+        <p class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase mb-5">Navegación</p>
+        <ul class="space-y-3">
+          {navItems.map(([label, href]) => <li><a href={href} class="font-body text-sm text-white/60 hover:text-white transition-colors">{label}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <p class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase mb-5">Participar</p>
+        <div class="space-y-3">
+          <a href={`${basePath}CFP/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Enviar propuesta</a>
+          {registrationSite
+            ? <a href={registrationSite} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Inscribirse</a>
+            : <a href={`${basePath}CFP/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Inscribirse</a>
+          }
+          <a href="mailto:jccs.contacto@proton.me" class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Patrocinios</a>
+          <a href={`${basePath}privacy/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-10 mb-10">
+      <p class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase mb-8 text-center">Instituciones colaboradoras</p>
+      <div class="flex flex-wrap items-center justify-center gap-10 sm:gap-12">
+        {logos.map(([alt, file, classes]) => (
+          <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+            <img alt={alt} loading="lazy" width="140" height="40" decoding="async"
+              class={`h-7 sm:h-9 w-auto object-contain ${classes}`} src={`${basePath}assets/logos/${file}`} />
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="font-mono text-[11px] text-white/30">© 2026 JCCS — 3ª Jornada Chilena de Ciberseguridad en Salud</p>
+      <p class="font-mono text-[11px] text-white/20">Universidad de los Andes · Las Condes · Santiago de Chile</p>
+    </div>
+  </div>
+</footer>

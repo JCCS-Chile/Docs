@@ -4,7 +4,7 @@ title: Llamado a Contribuciones JCCS 2026
 ---
 
 <div class="cfp-hero">
-  <img src="{{ '/assets/img/cfp-2026-header.jpg' | relative_url }}" alt="CFP Header">
+  <img src="./images/header.png" alt="CFP Header">
 </div>
 ---
 
@@ -122,9 +122,7 @@ Su objetivo es garantizar rigor técnico, relevancia sectorial y diversidad de p
 
 Las postulaciones deberán realizarse a través del formulario oficial del evento:
 
-<a href="https://inguandes.typeform.com/to/gp4aQlp7" class="cfp-button">
-  Enlace al formulario
-</a>
+<a href="https://inguandes.typeform.com/to/gp4aQlp7" class="cfp-button">Enlace al formulario</a>
 
 ---
 
@@ -132,8 +130,10 @@ Las postulaciones deberán realizarse a través del formulario oficial del event
 
 Para consultas, contactar al comité organizador de la Jornada al correo jccs.contacto@proton.me
 
+La política de privacidad del evento está disponible en [Política de Ciberseguridad, Privacidad y Protección de Datos](../privacy/).
+
 ---
 
 <div class="cfp-footer">
-  <img src="{{ '/assets/img/cfp-2026-footer.jpg' | relative_url }}" alt="CFP Header">
+  <img src="./images/cfp-form-splash-2026.jpg" alt="CFP Formulario">
 </div>
