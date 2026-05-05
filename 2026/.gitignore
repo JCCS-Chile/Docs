@@ -2,7 +2,5 @@
 /dist/
 /legacy-index.html
 /node_modules/
-/public/CFP/images/
-/public/assets/
 /.astro/
 .env
