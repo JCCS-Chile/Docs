@@ -53,6 +53,21 @@ jobs:
           set -euo pipefail
           mkdir -p _site
           touch _site/.nojekyll
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="es">
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <title>JCCS Chile</title>
+              <meta http-equiv="refresh" content="0; url=./2026/">
+              <link rel="canonical" href="./2026/">
+            </head>
+            <body>
+              <p><a href="./2026/">Ir al sitio JCCS 2026</a></p>
+            </body>
+          </html>
+          EOF
 
           if [ -d 2023 ]; then
             cp -R 2023 _site/2023
@@ -72,7 +87,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}2026/
     steps:
       - name: Deploy
         id: deployment
