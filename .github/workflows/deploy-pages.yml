@@ -24,7 +24,7 @@ jobs:
     name: Build static site
     runs-on: ubuntu-latest
     env:
-      PUBLIC_BASE_PATH: /Docs/2026/
+      PUBLIC_BASE_PATH: /www/2026/
       PUBLIC_REGISTRATION_SITE: ${{ vars.PUBLIC_REGISTRATION_SITE }}
     steps:
       - name: Checkout
