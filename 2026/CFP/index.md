@@ -120,17 +120,14 @@ Su objetivo es garantizar rigor técnico, relevancia sectorial y diversidad de p
 
 ## 10. Envío de Propuestas
 
-Las postulaciones deberán realizarse a través del formulario oficial del evento:
-
-<a href="https://inguandes.typeform.com/to/gp4aQlp7" class="cfp-button">Enlace al formulario</a>
+{{CFP_FORM_SECTION}}
 
 ---
 
 ## 11. Contacto
 
-Para consultas, contactar al comité organizador de la Jornada al correo jccs.contacto@proton.me
+{{CONTACT_EMAIL_TEXT}}
 
 La política de privacidad del evento está disponible en [Política de Ciberseguridad, Privacidad y Protección de Datos](../privacy/).
 
 ---
-

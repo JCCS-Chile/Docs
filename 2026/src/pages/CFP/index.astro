@@ -2,11 +2,32 @@
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import { cfpFormUrl, contactEmail } from "../../config/site.js";
 import { markdownToHtml } from "../../utils/markdown.js";
 import cfpMarkdown from "../../../CFP/index.md?raw";
 
 const title = "Llamado a Contribuciones JCCS 2026";
-const cfpHtml = markdownToHtml(cfpMarkdown);
+const escapeHtml = (value) => value
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;");
+
+const configuredMarkdown = cfpMarkdown
+  .replace(
+    "{{CFP_FORM_SECTION}}",
+    cfpFormUrl
+      ? `Las postulaciones deberán realizarse a través del formulario oficial del evento:\n\n<a href="${escapeHtml(cfpFormUrl)}" class="cfp-button" target="_blank" rel="noopener noreferrer">Enlace al formulario</a>`
+      : ""
+  )
+  .replace(
+    "{{CONTACT_EMAIL_TEXT}}",
+    contactEmail
+      ? `Para consultas, contactar al comité organizador de la Jornada al correo [${escapeHtml(contactEmail)}](mailto:${escapeHtml(contactEmail)})`
+      : ""
+  );
+
+const cfpHtml = markdownToHtml(configuredMarkdown);
 ---
 
 <SiteLayout basePath="../" title={`${title} — JCCS 2026`}>

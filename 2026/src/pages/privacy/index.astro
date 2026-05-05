@@ -2,11 +2,31 @@
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import { contactEmail } from "../../config/site.js";
 import { markdownToHtml } from "../../utils/markdown.js";
 import privacyMarkdown from "../../../PRIVACY.md?raw";
 
 const title = "Política de Ciberseguridad, Privacidad y Protección de Datos";
-const privacyHtml = markdownToHtml(privacyMarkdown);
+const escapeHtml = (value) => value
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;");
+
+const contactEmailText = contactEmail ? escapeHtml(contactEmail) : "";
+const configuredMarkdown = privacyMarkdown
+  .replace(
+    "{{CONTACT_EMAIL_PRIVACY_LINE}}",
+    contactEmailText ? `📩 Contacto: **${contactEmailText}**` : ""
+  )
+  .replace(
+    "{{CONTACT_EMAIL_PRIVACY_ROWS}}",
+    contactEmailText
+      ? `| Privacidad | ${contactEmailText} |\n| Seguridad | ${contactEmailText} |\n| General | ${contactEmailText} |`
+      : ""
+  );
+
+const privacyHtml = markdownToHtml(configuredMarkdown);
 ---
 
 <SiteLayout basePath="../" title={`${title} — JCCS 2026`}>

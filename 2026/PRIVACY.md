@@ -104,7 +104,7 @@ Los participantes pueden ejercer:
 - Eliminación  
 - Oposición  
 
-📩 Contacto: **jccs.contacto@proton.me**
+{{CONTACT_EMAIL_PRIVACY_LINE}}
 
 ---
 
@@ -166,9 +166,7 @@ El incumplimiento puede implicar:
 
 | Área | Contacto |
 |-----|---------|
-| Privacidad | jccs.contacto@proton.me |
-| Seguridad | jccs.contacto@proton.me |
-| General | jccs.contacto@proton.me |
+{{CONTACT_EMAIL_PRIVACY_ROWS}}
 | Soporte en evento | Mesón de acreditación |
 
 ---

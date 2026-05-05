@@ -58,19 +58,21 @@ La home todavía conserva parte del HTML heredado en `src/page.html`. `src/pages
 
 Las imágenes fuente del CFP viven en `CFP/images/`.
 
-## Enlace de registro
+## Variables públicas
 
-El botón `Regístrate` usa la variable pública:
+El sitio usa variables públicas de Astro para enlaces que se muestran a participantes:
 
 ```env
+PUBLIC_CFP_FORM_URL=https://inguandes.typeform.com/to/gp4aQlp7
+PUBLIC_CONTACT_EMAIL=jccs.contacto@proton.me
 PUBLIC_REGISTRATION_SITE=https://inguandes.typeform.com/to/gtDo6MI8#source=xxxxx
 ```
 
 En desarrollo, crea un archivo `.env` en la raíz. Hay un `.env.example` como referencia.
 
-Si `PUBLIC_REGISTRATION_SITE` no está definida, el sitio usa `/CFP/` como fallback. Astro sólo expone al cliente variables con prefijo `PUBLIC_`; reinicia `npm run dev` después de cambiar `.env`.
+Si `PUBLIC_CFP_FORM_URL` o `PUBLIC_CONTACT_EMAIL` no están definidas, sus enlaces y botones no se renderizan. Si `PUBLIC_REGISTRATION_SITE` no está definida, el sitio usa `/CFP/` como fallback. Astro sólo expone al cliente variables con prefijo `PUBLIC_`; reinicia `npm run dev` después de cambiar `.env`.
 
-En producción, configura `PUBLIC_REGISTRATION_SITE` en el proveedor de hosting antes del build.
+En producción, configura estas variables en el proveedor de hosting antes del build.
 
 ## Deploy en GitHub Pages
 
@@ -78,7 +80,7 @@ El workflow `.github/workflows/deploy-pages.yml` publica el sitio en GitHub Page
 
 - El sitio 2026 se compila desde este directorio y se publica bajo `/Docs/2026/`.
 - El workflow usa `PUBLIC_BASE_PATH=/Docs/2026/` para que Astro genere rutas correctas de assets.
-- `PUBLIC_REGISTRATION_SITE` se lee desde **Settings → Secrets and variables → Actions → Variables** como variable de repositorio.
+- `PUBLIC_CFP_FORM_URL`, `PUBLIC_CONTACT_EMAIL` y `PUBLIC_REGISTRATION_SITE` se leen desde **Settings → Secrets and variables → Actions → Variables** como variables de repositorio.
 - Si no configuras `PUBLIC_REGISTRATION_SITE`, el sitio usa `/CFP/` como fallback para registro.
 
 En GitHub Pages, configura el source como **GitHub Actions**.

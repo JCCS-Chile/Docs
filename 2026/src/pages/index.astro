@@ -3,9 +3,24 @@ import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import Countdown from "../components/Countdown.jsx";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { contactEmail } from "../config/site.js";
 import pageHtml from "../page.html?raw";
 
-const homeContent = pageHtml
+const escapeHtml = (value) => value
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;");
+
+const applySiteConfig = (html) => {
+  if (!contactEmail) {
+    return html.replace(/<a href="mailto:__PUBLIC_CONTACT_EMAIL__"[\s\S]*?<\/a>/g, "");
+  }
+
+  return html.replaceAll("__PUBLIC_CONTACT_EMAIL__", escapeHtml(contactEmail));
+};
+
+const homeContent = applySiteConfig(pageHtml)
   .replace(/^<main class="relative">\s*/, "")
   .replace(/\s*<\/main>\s*$/, "")
   .replace(/<header[\s\S]*?<\/header>\s*/, "")
