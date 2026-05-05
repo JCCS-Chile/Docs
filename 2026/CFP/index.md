@@ -6,6 +6,9 @@ title: Llamado a Contribuciones JCCS 2026
 <div class="cfp-hero">
   <img src="./images/header.png" alt="CFP Header">
 </div>
+
+{{CFP_FORM_HERO_BUTTON}}
+
 ---
 
 ## 1. Introducción

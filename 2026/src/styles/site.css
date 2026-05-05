@@ -175,6 +175,12 @@ body {
   border-radius: 8px;
 }
 
+.cfp-hero-action {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+}
+
 .cfp-button {
   display: inline-flex;
   align-items: center;
