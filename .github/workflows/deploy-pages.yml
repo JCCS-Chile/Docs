@@ -61,9 +61,30 @@ jobs:
             <head>
               <meta charset="utf-8">
               <meta name="viewport" content="width=device-width, initial-scale=1">
-              <title>JCCS Chile</title>
+              <title>JCCS 2026 — 3ª Jornada Chilena de Ciberseguridad en Salud</title>
+              <meta name="description" content="Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario. 12 de agosto 2026 · Universidad de los Andes · Las Condes, Santiago.">
+              <meta name="keywords" content="ciberseguridad,salud,Chile,JCCS,jornada,2026">
+              <meta name="author" content="JCCS Chile">
+              <meta name="robots" content="index, follow">
+              <meta name="theme-color" content="#005A8D">
+              <meta name="application-name" content="JCCS 2026">
+              <link rel="canonical" href="https://www.jornadacibersalud.cl/2026/">
+              <meta property="og:title" content="JCCS 2026 — 3ª Jornada Chilena de Ciberseguridad en Salud">
+              <meta property="og:description" content="Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario. 12 de agosto 2026 · Universidad de los Andes · Las Condes, Santiago.">
+              <meta property="og:url" content="https://www.jornadacibersalud.cl/2026/">
+              <meta property="og:site_name" content="JCCS 2026">
+              <meta property="og:locale" content="es_CL">
+              <meta property="og:type" content="website">
+              <meta property="og:image" content="https://www.jornadacibersalud.cl/2026/CFP/images/header.png">
+              <meta property="og:image:secure_url" content="https://www.jornadacibersalud.cl/2026/CFP/images/header.png">
+              <meta property="og:image:type" content="image/png">
+              <meta property="og:image:alt" content="JCCS 2026 — Jornada Chilena de Ciberseguridad en Salud">
+              <meta name="twitter:card" content="summary_large_image">
+              <meta name="twitter:title" content="JCCS 2026 — 3ª Jornada Chilena de Ciberseguridad en Salud">
+              <meta name="twitter:description" content="Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario. 12 de agosto 2026 · Universidad de los Andes · Las Condes, Santiago.">
+              <meta name="twitter:image" content="https://www.jornadacibersalud.cl/2026/CFP/images/header.png">
+              <meta name="twitter:image:alt" content="JCCS 2026 — Jornada Chilena de Ciberseguridad en Salud">
               <meta http-equiv="refresh" content="0; url=./2026/">
-              <link rel="canonical" href="./2026/">
             </head>
             <body>
               <p><a href="./2026/">Ir al sitio JCCS 2026</a></p>
