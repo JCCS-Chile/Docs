@@ -24,7 +24,7 @@ jobs:
     name: Build static site
     runs-on: ubuntu-latest
     env:
-      PUBLIC_BASE_PATH: /www/2026/
+      PUBLIC_BASE_PATH: /2026/
       PUBLIC_CFP_FORM_URL: ${{ vars.PUBLIC_CFP_FORM_URL }}
       PUBLIC_CONTACT_EMAIL: ${{ vars.PUBLIC_CONTACT_EMAIL }}
       PUBLIC_REGISTRATION_SITE: ${{ vars.PUBLIC_REGISTRATION_SITE }}
