@@ -6,6 +6,10 @@ const {
   description = "Gobernanza, Resiliencia e Interoperabilidad Segura en el Ecosistema Sanitario. 12 de agosto 2026 · Universidad de los Andes · Las Condes, Santiago.",
   title = "JCCS 2026 — 3ª Jornada Chilena de Ciberseguridad en Salud",
 } = Astro.props;
+
+const siteUrl = "https://www.jornadacibersalud.cl";
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const socialImageUrl = new URL(`${basePath}CFP/images/header.png`, canonicalUrl).toString();
 ---
 
 <!doctype html>
@@ -16,13 +20,26 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content="ciberseguridad,salud,Chile,JCCS,jornada,2026" />
+    <meta name="author" content="JCCS Chile" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#005A8D" />
+    <meta name="application-name" content="JCCS 2026" />
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="JCCS 2026" />
     <meta property="og:locale" content="es_CL" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:secure_url" content={socialImageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="JCCS 2026 — Jornada Chilena de Ciberseguridad en Salud" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
+    <meta name="twitter:image:alt" content="JCCS 2026 — Jornada Chilena de Ciberseguridad en Salud" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJX4X9MFVK"></script>
     <script is:inline>
