@@ -23,6 +23,16 @@ const {
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJX4X9MFVK"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BJX4X9MFVK");
+    </script>
     <link rel="icon" type="image/png" href={`${basePath}assets/favicon/favicon-96x96.png`} sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href={`${basePath}assets/favicon/favicon.svg`} />
     <link rel="shortcut icon" href={`${basePath}assets/favicon/favicon.ico`} />
