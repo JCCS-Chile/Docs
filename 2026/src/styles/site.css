@@ -35,6 +35,17 @@ body {
   line-height: 1.25 !important;
 }
 
+.schedule-row {
+  padding: 14px 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .schedule-row {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 .countdown-card {
   position: relative;
   display: flex;
