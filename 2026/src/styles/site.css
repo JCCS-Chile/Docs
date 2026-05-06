@@ -6,6 +6,31 @@ body {
   margin: 0;
 }
 
+.linkedin-share-plugin {
+  display: none;
+  min-width: 70px;
+  min-height: 24px;
+  align-items: center;
+}
+
+.hero-share-linkedin {
+  display: flex;
+  min-width: 70px;
+  min-height: 24px;
+  margin: -0.75rem 0 2rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .linkedin-share-plugin {
+    display: inline-flex;
+  }
+
+  .hero-share-linkedin {
+    display: none;
+  }
+}
+
 .hero-title-line {
   line-height: 1.25 !important;
 }

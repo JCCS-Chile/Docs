@@ -36,6 +36,9 @@ const navItems = [
       {navItems.map(([label, href]) => <a href={href} class="nav-link font-body">{label}</a>)}
     </nav>
     <div class="flex items-center gap-3">
+      <div class="linkedin-share-plugin" aria-label="Compartir JCCS 2026 en LinkedIn">
+        <script type="IN/Share" data-url="https://www.jornadacibersalud.cl/2026/"></script>
+      </div>
       {registrationSite
         ? <a href={registrationSite} class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5" target="_blank" rel="noopener noreferrer">Regístrate</a>
         : <a href={`${basePath}CFP/`} class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5">Regístrate</a>
