@@ -7,7 +7,11 @@ title: Llamado a Contribuciones JCCS 2026
   <img src="./images/header.png" alt="CFP Header">
 </div>
 
+<div class="cfp-deadline-notice">
+  <strong>Extendemos la fecha para envío de contribuciones hasta el 19 de junio.</strong> Revisa el <a href="#cronograma">cronograma actualizado</a>. Enviar sus consultas a <a href="mailto:jccs.contacto@proton.me">jccs.contacto@proton.me</a>.
+
 {{CFP_FORM_HERO_BUTTON}}
+</div>
 
 ---
 
@@ -98,11 +102,11 @@ Las propuestas serán evaluadas por el Comité Científico considerando:
 
 ---
 
-## 8. Fechas Importantes
+<h2 id="cronograma">8. Fechas Importantes</h2>
 
 - Apertura del llamado: lunes 13 de abril
-- Cierre de postulaciones: viernes 29 de mayo  
-- Notificación de resultados: lunes 22 de junio
+- Cierre de postulaciones: viernes 19 de junio  
+- Notificación de resultados: lunes 13 de julio
 - Evento: **miércoles 12 de agosto de 2026**
 
 ---

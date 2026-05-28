@@ -7,6 +7,8 @@ import { markdownToHtml } from "../../utils/markdown.js";
 import cfpMarkdown from "../../../CFP/index.md?raw";
 
 const title = "Llamado a Contribuciones JCCS 2026";
+const devCfpFormUrl = "https://inguandes.typeform.com/to/gp4aQlp7";
+const cfpSubmissionUrl = cfpFormUrl || (import.meta.env.DEV ? devCfpFormUrl : "");
 const escapeHtml = (value) => value
   .replace(/&/g, "&amp;")
   .replace(/</g, "&lt;")
@@ -16,14 +18,14 @@ const escapeHtml = (value) => value
 const configuredMarkdown = cfpMarkdown
   .replace(
     "{{CFP_FORM_HERO_BUTTON}}",
-    cfpFormUrl
-      ? `<div class="cfp-hero-action"><a href="${escapeHtml(cfpFormUrl)}" class="cfp-button" target="_blank" rel="noopener noreferrer">Enviar contribución</a></div>`
+    cfpSubmissionUrl
+      ? `<div class="cfp-hero-action"><a href="${escapeHtml(cfpSubmissionUrl)}" class="cfp-button" target="_blank" rel="noopener noreferrer">Enviar contribución</a></div>`
       : ""
   )
   .replace(
     "{{CFP_FORM_SECTION}}",
-    cfpFormUrl
-      ? `Las postulaciones deberán realizarse a través del formulario oficial del evento:\n\n<a href="${escapeHtml(cfpFormUrl)}" class="cfp-button" target="_blank" rel="noopener noreferrer">Enlace al formulario</a>`
+    cfpSubmissionUrl
+      ? `Las postulaciones deberán realizarse a través del formulario oficial del evento:\n\n<a href="${escapeHtml(cfpSubmissionUrl)}" class="cfp-button" target="_blank" rel="noopener noreferrer">Enlace al formulario</a>`
       : ""
   )
   .replace(

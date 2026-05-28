@@ -156,6 +156,10 @@ body {
   font-size: 1.15rem;
 }
 
+.document-content [id] {
+  scroll-margin-top: 6rem;
+}
+
 .document-content p,
 .document-content ul,
 .document-content ol,
@@ -209,6 +213,24 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.cfp-deadline-notice {
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid #bae6fd;
+  border-left: 4px solid #0284c7;
+  border-radius: 8px;
+  background: #f0f9ff;
+  padding: 1rem 1.2rem;
+  color: #0f172a;
+}
+
+.cfp-deadline-notice a {
+  white-space: nowrap;
+}
+
+.cfp-deadline-notice .cfp-hero-action {
+  margin: 1rem 0 0;
 }
 
 .cfp-hero-action {
