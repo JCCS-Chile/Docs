@@ -8,7 +8,7 @@ title: Llamado a Contribuciones JCCS 2026
 </div>
 
 <div class="cfp-deadline-notice">
-  <strong>Extendemos la fecha para envío de contribuciones hasta el 19 de junio.</strong> Revisa el <a href="#cronograma">cronograma actualizado</a>. Enviar sus consultas a <a href="mailto:jccs.contacto@proton.me">jccs.contacto@proton.me</a>.
+  <strong>Extendemos la fecha para envío de contribuciones hasta el 19 de junio.</strong> Revisa el <a href="#cronograma">cronograma actualizado</a>. Envía tus consultas a <a href="mailto:jccs.contacto@proton.me">jccs.contacto@proton.me</a>.
 
 {{CFP_FORM_HERO_BUTTON}}
 </div>
