@@ -1,0 +1,36 @@
+---
+import speakers from "../data/speakers.json";
+
+const { basePath = "./" } = Astro.props;
+---
+
+<div id="speakers" class="speakers-block" aria-labelledby="speakers-title">
+  <div class="speakers-heading">
+    <div class="section-label mb-5">Primeros speakers confirmados</div>
+    <h3 id="speakers-title" class="font-display font-extrabold text-3xl sm:text-4xl text-brand-900 leading-tight">
+      Expertos que lideran <span class="gradient-text">la conversación</span>
+    </h3>
+  </div>
+
+  <div class="speakers-grid">
+    {speakers.map((speaker) => (
+      <article class="speaker-card">
+        <div class="speaker-photo-wrap">
+          <img
+            class="speaker-photo"
+            src={`${basePath}assets/images/speakers/${speaker.photo}`}
+            alt={`Retrato de ${speaker.name}`}
+            width="800"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="speaker-details">
+          <h4 class="speaker-name">{speaker.name}</h4>
+          <p class="speaker-role">{speaker.role}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</div>

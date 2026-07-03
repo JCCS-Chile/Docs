@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Felipe Harboe",
+    "role": "Socio Principal, H&CO",
+    "photo": "felipe-harboe.jpg"
+  },
+  {
+    "name": "Cristián Donaire",
+    "role": "CISO, RedSalud",
+    "photo": "cristian-donaire.jpg"
+  },
+  {
+    "name": "Felix Liberona",
+    "role": "Subdirector Ejecutivo, CENS",
+    "photo": "felix-liberona.jpg"
+  },
+  {
+    "name": "Gabriel Bergel",
+    "role": "Presidente, 8.8",
+    "photo": "gabriel-bergel.jpg"
+  },
+  {
+    "name": "Sebastián Vargas",
+    "role": "CEO, TTPSec",
+    "photo": "sebastian-vargas.jpg"
+  },
+  {
+    "name": "Dmitri Zaroubine",
+    "role": "Director de Ingeniería para LATAM, Veeam",
+    "photo": "dmtri-zaroubine.jpg"
+  },
+  {
+    "name": "Jorge Herrera",
+    "role": "Experto en Interoperabilidad Digital en Salud",
+    "photo": "jorge-herrera.jpg"
+  },
+  {
+    "name": "José Fernández",
+    "role": "CEO, Rayen Salud",
+    "photo": "jose-fernandez.jpg"
+  },
+  {
+    "name": "Romina Torres",
+    "role": "Profesora Asociada, UAI",
+    "photo": "romina-torres.jpg"
+  },
+  {
+    "name": "Javier Mora",
+    "role": "Médico Cardiocirujano, Clínica Las Condes",
+    "photo": "javier-mora.jpg"
+  }
+]

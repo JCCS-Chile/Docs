@@ -1,0 +1,27 @@
+---
+import organizers from "../data/organizers.json";
+
+const { basePath = "./" } = Astro.props;
+const logoPath = (logo) => `${basePath}assets/images/organizadores/${logo}`;
+---
+
+<div class="organizers-grid">
+  {organizers.map((organizer) => (
+    <a
+      class="organizer-link"
+      href={organizer.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={`Visitar el sitio web de ${organizer.name}`}
+    >
+      <img
+        src={logoPath(organizer.logo)}
+        alt={`Logo de ${organizer.name}`}
+        title={organizer.name}
+        width="200"
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+  ))}
+</div>

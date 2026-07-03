@@ -1,0 +1,48 @@
+---
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import team from "../data/organizing-team.json";
+
+const { basePath = "./" } = Astro.props;
+const initials = (name) => name.split(" ").map((part) => part[0]).slice(0, 2).join("");
+const hasPhoto = (photo) => existsSync(join(process.cwd(), "public", "assets", "images", "equipo-organizador", photo));
+---
+
+<div class="team-grid">
+  {team.map((member) => (
+    <article class="speaker-card team-card">
+      <div class="speaker-photo-wrap">
+        {hasPhoto(member.photo) ? (
+          <img
+            class="speaker-photo"
+            src={`${basePath}assets/images/equipo-organizador/${member.photo}`}
+            alt={`Retrato de ${member.name}`}
+            width="800"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div class="team-photo-placeholder" role="img" aria-label={`Fotografía pendiente de ${member.name}`}>
+            <span>{initials(member.name)}</span>
+          </div>
+        )}
+      </div>
+      <div class="speaker-details">
+        <h3 class="speaker-name">
+          {member.url ? (
+            <a href={member.url} target="_blank" rel="noopener noreferrer" title={`Ver el perfil de ${member.name} en LinkedIn`}>
+              {member.name}
+            </a>
+          ) : member.name}
+        </h3>
+        <p class="speaker-role">{member.role}</p>
+        {member.url && (
+          <a class="team-profile-link" href={member.url} target="_blank" rel="noopener noreferrer">
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+        )}
+      </div>
+    </article>
+  ))}
+</div>

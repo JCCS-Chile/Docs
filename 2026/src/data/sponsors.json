@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Veeam",
+    "url": "https://www.veeam.com",
+    "logo": "veeam.png",
+    "tier": "primary",
+    "width": 360
+  },
+  {
+    "name": "Rayen Salud",
+    "url": "https://www.rayensalud.com",
+    "logo": "rayen-salud.png",
+    "tier": "primary",
+    "width": 360
+  },
+  {
+    "name": "CENS",
+    "url": "https://www.cens.cl",
+    "logo": "cens.png",
+    "tier": "secondary",
+    "width": 200
+  },
+  {
+    "name": "Colegio Médico de Chile",
+    "url": "https://www.colegiomedico.cl/",
+    "logo": "colmed.png",
+    "tier": "secondary",
+    "width": 200
+  }
+]

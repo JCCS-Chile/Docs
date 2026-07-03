@@ -1,0 +1,58 @@
+---
+import schedule from "../data/schedule.json";
+import speakers from "../data/speakers.json";
+
+const toneFor = (category) => {
+  if (category === "Pausa") return "pause";
+  if (category === "Almuerzo") return "meal";
+  if (category === "Workshop") return "workshop";
+  if (category === "Cierre" || category === "Fin") return "closing";
+  if (category === "Apertura") return "opening";
+  return "session";
+};
+
+const speakerDetails = new Map(speakers.map((speaker) => [speaker.name, speaker.role]));
+const announcedSpeakers = new Set();
+const scheduleWithSpeakerDetails = schedule.map((item) => ({
+  ...item,
+  speakers: item.speakers?.map((name) => {
+    const showRole = !announcedSpeakers.has(name);
+    announcedSpeakers.add(name);
+
+    return {
+      name,
+      role: showRole ? speakerDetails.get(name) : undefined,
+    };
+  }),
+}));
+---
+
+<div class="schedule-list">
+  {scheduleWithSpeakerDetails.map((item) => (
+    <article class={`schedule-entry schedule-entry--${toneFor(item.category)}`}>
+      <time class="schedule-time" datetime={item.time}>{item.time}</time>
+      <div class="schedule-marker" aria-hidden="true"></div>
+      <div class="schedule-content">
+        <div class="schedule-meta">
+          <span class="schedule-category">{item.category}</span>
+          {item.duration && <span class="schedule-duration">{item.duration}</span>}
+        </div>
+        <h3 class="schedule-activity">{item.activity}</h3>
+        {item.detail && <p class="schedule-detail">{item.detail}</p>}
+        {item.speakers && (
+          <div class="schedule-speakers">
+            <span>Speaker{item.speakers.length > 1 ? "s" : ""}</span>
+            <ul>
+              {item.speakers.map((speaker) => (
+                <li>
+                  <strong>{speaker.name}</strong>
+                  {speaker.role && <small>{speaker.role}</small>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </article>
+  ))}
+</div>

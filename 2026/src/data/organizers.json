@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Universidad de los Andes",
+    "url": "https://www.uandes.cl",
+    "logo": "uandes-dark.png"
+  },
+  {
+    "name": "Universidad del Desarrollo",
+    "url": "https://www.udd.cl",
+    "logo": "udd-dark.png"
+  },
+  {
+    "name": "Instituto de Tecnología para la Innovación en Salud y Bienestar (ITiSB-UNAB)",
+    "url": "https://itisb.unab.cl",
+    "logo": "itisb-unab.png"
+  },
+  {
+    "name": "Clínica Alemana",
+    "url": "https://www.clinicaalemana.cl/",
+    "logo": "clinica-alemana.png"
+  },
+  {
+    "name": "Alianza Chilena de Ciberseguridad",
+    "url": "https://alianzaciberseguridad.cl/",
+    "logo": "acc.png"
+  }
+]

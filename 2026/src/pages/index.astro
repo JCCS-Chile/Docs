@@ -1,6 +1,11 @@
 ---
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
+import Organizers from "../components/Organizers.astro";
+import OrganizingTeam from "../components/OrganizingTeam.astro";
+import Schedule from "../components/Schedule.astro";
+import Speakers from "../components/Speakers.astro";
+import Sponsors from "../components/Sponsors.astro";
 import Countdown from "../components/Countdown.jsx";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { contactEmail, registrationSite } from "../config/site.js";
@@ -29,12 +34,28 @@ const homeContent = applySiteConfig(pageHtml)
   .replace(/\s*<\/main>\s*$/, "")
   .replace(/<header[\s\S]*?<\/header>\s*/, "")
   .replace(/\s*<footer[\s\S]*?<\/footer>\s*/, "");
+
+const [homeContentBeforeSpeakers, contentAfterSpeakersMarker] = homeContent.split("<!-- SPEAKERS -->");
+const [homeContentBeforeSponsors, contentAfterSponsorsMarker] = contentAfterSpeakersMarker.split("<!-- SPONSORS -->");
+const [homeContentBeforeOrganizers, contentAfterOrganizersMarker] = contentAfterSponsorsMarker.split("<!-- ORGANIZERS -->");
+const [homeContentBeforeTeam, contentAfterTeamMarker] = contentAfterOrganizersMarker.split("<!-- ORGANIZING TEAM -->");
+const [homeContentBeforeSchedule, homeContentAfterSchedule] = contentAfterTeamMarker.split("<!-- SCHEDULE -->");
 ---
 
 <SiteLayout basePath="./">
   <main class="relative">
     <SiteHeader basePath="./" />
-    <Fragment set:html={homeContent} />
+    <Fragment set:html={homeContentBeforeSpeakers} />
+    <Speakers basePath="./" />
+    <Fragment set:html={homeContentBeforeSponsors} />
+    <Sponsors basePath="./" />
+    <Fragment set:html={homeContentBeforeOrganizers} />
+    <Organizers basePath="./" />
+    <Fragment set:html={homeContentBeforeTeam} />
+    <OrganizingTeam basePath="./" />
+    <Fragment set:html={homeContentBeforeSchedule} />
+    <Schedule />
+    <Fragment set:html={homeContentAfterSchedule} />
     <SiteFooter basePath="./" />
   </main>
   <Countdown client:load />
