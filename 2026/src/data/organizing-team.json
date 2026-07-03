@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Claudio Álvarez",
+    "role": "Profesor Asociado, Universidad de los Andes",
+    "photo": "claudio-alvarez.jpg",
+    "url": "https://www.linkedin.com/in/claudioalvarezgomez/"
+  },
+  {
+    "name": "Hernán Astudillo",
+    "role": "Profesor Titular, Universidad Andrés Bello",
+    "photo": "hernan-astudillo.jpg",
+    "url": "https://www.linkedin.com/in/hernanastudillo/"
+  },
+  {
+    "name": "Maurizio Mattoli",
+    "role": "Director, Centro de Evaluación de Tecnologías Sanitarias Digitales, Universidad del Desarrollo",
+    "photo": "maurizio-mattoli.jpg",
+    "url": "https://www.linkedin.com/in/mauriziomattoli/"
+  },
+  {
+    "name": "Gabriel Bergel",
+    "role": "Presidente, 8.8 & Líder de Plataforma Estratégica de Salud, Alianza Chilena de Ciberseguridad",
+    "photo": "gabriel-bergel.jpg",
+    "url": "https://www.linkedin.com/in/gabrielbergel/"
+  },
+  {
+    "name": "Carlos Monroy",
+    "role": "Subgerente de Ciberseguridad, Grupo Alemana",
+    "photo": "carlos-monroy.jpg",
+    "url": null
+  }
+]

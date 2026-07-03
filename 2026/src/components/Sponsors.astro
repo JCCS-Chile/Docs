@@ -1,0 +1,53 @@
+---
+import sponsors from "../data/sponsors.json";
+
+const { basePath = "./" } = Astro.props;
+const primarySponsors = sponsors.filter((sponsor) => sponsor.tier === "primary");
+const secondarySponsors = sponsors.filter((sponsor) => sponsor.tier === "secondary");
+
+const logoPath = (logo) => `${basePath}assets/images/sponsors_patrocinadores/${logo}`;
+---
+
+<div class="sponsors-showcase">
+  <div class="sponsors-primary" aria-label="Sponsors principales">
+    {primarySponsors.map((sponsor) => (
+      <a
+        class="sponsor-link"
+        href={sponsor.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={`Visitar el sitio web de ${sponsor.name}`}
+      >
+        <img
+          src={logoPath(sponsor.logo)}
+          alt={`Logo de ${sponsor.name}`}
+          title={sponsor.name}
+          width={sponsor.width}
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    ))}
+  </div>
+
+  <div class="sponsors-secondary" aria-label="Patrocinadores">
+    {secondarySponsors.map((sponsor) => (
+      <a
+        class="sponsor-link"
+        href={sponsor.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={`Visitar el sitio web de ${sponsor.name}`}
+      >
+        <img
+          src={logoPath(sponsor.logo)}
+          alt={`Logo de ${sponsor.name}`}
+          title={sponsor.name}
+          width={sponsor.width}
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    ))}
+  </div>
+</div>
