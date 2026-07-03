@@ -99,7 +99,7 @@ jobs:
           mkdir -p _site/2026
           cp -R 2026/dist/. _site/2026/
           test -n "$(find _site/2026/assets/css -type f -name '*.css' -print -quit)"
-          test -f _site/2026/assets/logos/uandes-dark.png
+          test -f _site/2026/assets/images/organizadores/uandes-dark.png
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
