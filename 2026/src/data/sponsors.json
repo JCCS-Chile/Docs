@@ -26,5 +26,12 @@
     "logo": "colmed.png",
     "tier": "secondary",
     "width": 200
+  },
+  {
+    "name": "Fundación 8.8",
+    "url": "https://unreal.8dot8.org/",
+    "logo": "8_8-500px.png",
+    "tier": "secondary",
+    "width": 200
   }
 ]
