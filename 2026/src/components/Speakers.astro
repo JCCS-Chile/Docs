@@ -1,7 +1,22 @@
 ---
 import speakers from "../data/speakers.json";
+import PersonBio from "./PersonBio.astro";
 
 const { basePath = "./" } = Astro.props;
+const speakerOrder = [
+  "Felipe Harboe",
+  "José Fernández",
+  "Jorge Herrera",
+  "Romina Torres",
+  "Felix Liberona",
+  "Dmitri Zaroubine",
+  "Cristián Donaire",
+  "Javier Mora",
+  "Gabriel Bergel",
+  "Sebastián Vargas",
+];
+const speakersByName = new Map(speakers.map((speaker) => [speaker.name, speaker]));
+const orderedSpeakers = speakerOrder.map((name) => speakersByName.get(name)).filter(Boolean);
 ---
 
 <div id="speakers" class="speakers-block" aria-labelledby="speakers-title">
@@ -13,7 +28,7 @@ const { basePath = "./" } = Astro.props;
   </div>
 
   <div class="speakers-grid">
-    {speakers.map((speaker) => (
+    {orderedSpeakers.map((speaker) => (
       <article class="speaker-card">
         <div class="speaker-photo-wrap">
           <img
@@ -29,6 +44,7 @@ const { basePath = "./" } = Astro.props;
         <div class="speaker-details">
           <h4 class="speaker-name">{speaker.name}</h4>
           <p class="speaker-role">{speaker.role}</p>
+          <PersonBio person={speaker} />
         </div>
       </article>
     ))}

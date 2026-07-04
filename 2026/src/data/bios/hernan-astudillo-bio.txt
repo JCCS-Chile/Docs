@@ -1,0 +1,3 @@
+Hernán Astudillo es profesor Titular en la Universidad Andrés Bello. Actualmente dirige el Programa de Doctorado en Ingeniería. Ha realizado investigación, docencia y publicación en varias áreas de TI, incluyendo arquitectura e ingeniería de software, análisis y diseño de sistemas, diseño de lenguajes de programación, y tecnologías de bases de datos. Sus principales intereses y trabajos recientes están en la arquitectura de software, el proceso de desarrollo de software y la mejora de capacidades.
+
+El Dr. Astudillo obtuvo su título de Ingeniero en Informática en la Universidad Técnica Federico Santa María, Chile, y un Ph.D. en Georgia Tech, Estados Unidos.

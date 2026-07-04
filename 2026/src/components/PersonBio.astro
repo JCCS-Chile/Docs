@@ -1,0 +1,22 @@
+---
+const { person } = Astro.props;
+const hasBio = Boolean(person.short_bio && person.bio);
+---
+
+<div class="person-bio">
+  {hasBio && (
+    <details class="person-bio-details">
+      <summary class="person-bio-toggle">
+        <span class="person-bio-short">{person.short_bio}</span>
+        <span class="person-bio-action">
+          <span class="person-bio-more">Ver más</span>
+          <span class="person-bio-less">Minimizar</span>
+          <span class="person-bio-chevron" aria-hidden="true">⌄</span>
+        </span>
+      </summary>
+      <div class="person-bio-long">
+        {person.bio.split(/\n\s*\n/).map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </details>
+  )}
+</div>

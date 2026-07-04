@@ -2,51 +2,71 @@
   {
     "name": "Felipe Harboe",
     "role": "Socio Principal, H&CO",
-    "photo": "felipe-harboe.jpg"
+    "photo": "felipe-harboe.jpg",
+    "short_bio": "Impulsó la reforma constitucional que reconoció la protección de datos personales como derecho fundamental en Chile.",
+    "bio": "Felipe Harboe es especialista en regulación tecnológica, protección de datos personales y ciberseguridad, con una destacada trayectoria en el desarrollo de políticas públicas y marcos regulatorios en estas materias. Fue autor de la reforma constitucional que consagró la protección de los datos personales como un derecho fundamental en Chile y coautor de la nueva legislación sobre protección de datos personales.\n\nEs académico de los diplomados en Protección de Datos y Compliance de la Pontificia Universidad Católica de Chile, así como del Programa Intensivo en Digitalización e Innovación para Servicios Financieros de la Facultad de Economía y Negocios de la Universidad de Chile. Además, se desempeña como consultor internacional en regulación de protección de datos para América Latina y asesora a organizaciones públicas y privadas en gobierno de datos, cumplimiento normativo, gestión de riesgos y estrategia regulatoria."
   },
   {
     "name": "Cristián Donaire",
     "role": "CISO, RedSalud",
-    "photo": "cristian-donaire.jpg"
+    "photo": "cristian-donaire.jpg",
+    "short_bio": "Lidera la estrategia y el plan director de ciberseguridad de RedSalud CChC.",
+    "bio": "Cristián Donaire es Gerente de Seguridad de la Información en RedSalud CChC, donde lidera la estrategia de ciberseguridad de la organización y es responsable del diseño e implementación de su plan director de seguridad. Cuenta con una sólida trayectoria en gestión de tecnologías de la información, infraestructura, operaciones, gestión de riesgos y transformación tecnológica, habiendo desempeñado diversos cargos de liderazgo en RedSalud y Clínica RedSalud Vitacura.\n\nEs Magíster en Tecnologías de la Información por la Pontificia Universidad Católica de Chile y Magíster en Ciberseguridad por la Universidad Adolfo Ibáñez. Su experiencia combina la gestión de plataformas tecnológicas complejas con un fuerte enfoque en gobierno de la ciberseguridad, continuidad operacional, innovación y gestión eficiente de recursos tecnológicos."
   },
   {
     "name": "Felix Liberona",
     "role": "Subdirector Ejecutivo, CENS",
-    "photo": "felix-liberona.jpg"
+    "photo": "felix-liberona.jpg",
+    "short_bio": "Ha dedicado cerca de 15 años a conectar ciencia y sociedad mediante proyectos de I+D+i y transferencia tecnológica.",
+    "bio": "Félix Liberona es Administrador Público y Magíster en Geografía de la Universidad de Chile. Por cerca de 15 años ha trabajado en la intersección entre ciencia y sociedad, tanto en la gestión de proyectos de I+D+i como liderando iniciativas de transferencia tecnológica con metodologías transdisciplinarias. Subdirector Ejecutivo del Centro Nacional en Sistemas de Información en Salud (CENS). Anteriormente se desempeñó como Gestor de Transdisciplina en la Vicerrectoría de Investigación y Desarrollo de la Universidad de Chile, y como Encargado de Redes de Cooperación en la División Ciencia y Sociedad del Ministerio de Ciencia, Tecnología, Conocimiento e Innovación, entre otros cargos."
   },
   {
     "name": "Gabriel Bergel",
     "role": "Presidente, 8.8",
-    "photo": "gabriel-bergel.jpg"
+    "photo": "gabriel-bergel.jpg",
+    "short_bio": "Fundó y preside la Fundación de Ciberseguridad 8.8, referente regional en cultura y comunidad de seguridad digital.",
+    "bio": "Gabriel Bergel es un ejecutivo y referente en ciberseguridad con más de veinte años de experiencia en gestión de riesgos, respuesta a incidentes, resiliencia organizacional y seguridad de la información. Actualmente es CEO de Mantis y presidente de la Fundación de Ciberseguridad 8.8, desde donde impulsa iniciativas para fortalecer la cultura de ciberseguridad y promover una sociedad digital más segura e inclusiva.\n\nA lo largo de su trayectoria ha liderado áreas de ciberseguridad en organizaciones nacionales e internacionales, incluyendo Telefónica Tech, Kyndryl, Transbank y el sector financiero. Es miembro del Comité de Programa del Security Analyst Summit (SAS) de Kaspersky, copreside el Latin American Advisory Council de ISC2 y ha desempeñado un rol activo en la creación y fortalecimiento de diversas iniciativas que han contribuido al desarrollo de la comunidad de ciberseguridad en Chile y Latinoamérica."
   },
   {
     "name": "Sebastián Vargas",
     "role": "CEO, TTPSec",
-    "photo": "sebastian-vargas.jpg"
+    "photo": "sebastian-vargas.jpg",
+    "short_bio": "Fundó TTPSEC tras liderar la ciberseguridad del sistema eléctrico nacional y el CSIRT financiero chileno.",
+    "bio": "Sebastián Vargas Yáñez es CEO y fundador de TTPSEC, consultora especializada en ciberseguridad industrial (OT/ICS) y protección de infraestructuras críticas en Latinoamérica. Cuenta con más de 18 años de experiencia en ciberseguridad, gestión de riesgos y resiliencia operacional, asesorando a organizaciones de los sectores energía, minería, puertos, banca y sector público.\n\nPreviamente se desempeñó como CISO del Coordinador Eléctrico Nacional y lideró el CSIRT del sector financiero chileno en Redbanc. Su experiencia abarca el gobierno de la ciberseguridad, la protección de sistemas industriales, la gestión de incidentes y el cumplimiento de marcos internacionales como IEC 62443, ISO/IEC 27001 y NIST CSF.\n\nAdemás de su actividad profesional, dirige programas de formación en ciberseguridad industrial, ejerce docencia de posgrado en diversas universidades de Chile y Latinoamérica, y desarrolla investigación en inteligencia artificial aplicada a la ciberseguridad y protección de infraestructuras críticas."
   },
   {
     "name": "Dmitri Zaroubine",
     "role": "Director de Ingeniería para LATAM, Veeam",
-    "photo": "dmtri-zaroubine.jpg"
+    "photo": "dmtri-zaroubine.jpg",
+    "short_bio": "Dirige en Veeam la ingeniería que ayuda a empresas latinoamericanas a proteger sus datos y asegurar su resiliencia multicloud.",
+    "bio": "Dmitri Zaroubine es Director de Ingeniería para LATAM en Veeam. Cuenta con más de 20 años de experiencia en TI, liderando equipos enfocados en innovación tecnológica, transformación digital y adopción de nube en empresas líderes de la industria. En Veeam, Dmitri dirige el equipo de ingeniería que apoya a clientes y socios de negocio en sus retos de resiliencia de datos y protección multicloud, continuidad del negocio, preparación ante incidentes y ciberamenazas, ayudándoles a garantizar que sus datos sean seguros, disponibles y confiables para acelerar iniciativas digitales y de IA con mayor confianza."
   },
   {
     "name": "Jorge Herrera",
     "role": "Experto en Interoperabilidad Digital en Salud",
-    "photo": "jorge-herrera.jpg"
+    "photo": "jorge-herrera.jpg",
+    "short_bio": "Impulsó la interoperabilidad clínica y la modernización tecnológica nacional como Director de TICs del MINSAL.",
+    "bio": "Jorge Herrera es Experto en Interoperabilidad Digital en Salud, con más de 33 años de experiencia liderando proyectos de transformación tecnológica en el sector salud. Se desempeñó como Director del Departamento de TICs del MINSAL, donde impulsó iniciativas de interoperabilidad clínica, modernización de sistemas de información, infraestructura tecnológica entre otras estrategias digitales a nivel nacional."
   },
   {
     "name": "José Fernández",
     "role": "CEO, Rayen Salud",
-    "photo": "jose-fernandez.jpg"
+    "photo": "jose-fernandez.jpg",
+    "short_bio": "Creó la primera Unidad de Informática Médica del MINSAL y lideró SIDRA, clave para la historia clínica electrónica pública.",
+    "bio": "José Javier Fernández Figueroa es médico cirujano de la Universidad de Santiago de Chile, especialista en salud pública, con un MBA y estudios de posgrado en salud pública e inteligencia artificial. Cuenta con más de dos décadas de experiencia liderando procesos de transformación digital en el sector salud, integrando la práctica clínica, la gestión sanitaria y las tecnologías de la información.\n\nEn el Ministerio de Salud de Chile creó la primera Unidad de Informática Médica y lideró la estrategia SIDRA, impulsando la adopción de la historia clínica electrónica en la red pública de salud. Actualmente es CEO de Rayen Salud, donde ha encabezado la implementación de soluciones de historia clínica electrónica en más de 1.200 establecimientos de salud en Chile y otros países de la región, promoviendo altos estándares de calidad y seguridad de la información. Es además fundador y vicepresidente de PROSALUD Chile AG, exdirector de ACHISA y autor de diversos libros sobre salud digital, inteligencia artificial y transformación tecnológica en salud."
   },
   {
     "name": "Romina Torres",
     "role": "Profesora Asociada, UAI",
-    "photo": "romina-torres.jpg"
+    "photo": "romina-torres.jpg",
+    "short_bio": "Lidera investigación pionera en detección y respuesta a ciberataques mediante inteligencia artificial responsable.",
+    "bio": "Romina Torres es Doctora en Ingeniería Informática por la Universidad Técnica Federico Santa María y Profesora Asociada de la Facultad de Ingeniería y Ciencias de la Universidad Adolfo Ibáñez. Es también investigadora del Centro Nacional de Inteligencia Artificial (CENIA), del Centro de Investigación Tecnológica en Sistemas Ciberfísicos (CPS-RTC) y de Data Observatory, donde contribuye al desarrollo de investigación aplicada en inteligencia artificial, ciberseguridad y ciencia de datos. Su investigación se centra en la intersección entre inteligencia artificial y ciberseguridad, con especial interés en ciberseguridad para sistemas de IA, aplicación de IA para fortalecer la ciberseguridad, inteligencia artificial explicable centrada en el ser humano y ciencia de datos.\n\nHa sido Investigadora Principal de un proyecto Fondecyt sobre detección, monitoreo y análisis de ciberataques multietapa, y Directora de un proyecto Fondef para el desarrollo de una plataforma de detección y respuesta a ciberataques basada en inteligencia artificial responsable."
   },
   {
     "name": "Javier Mora",
     "role": "Médico Cardiocirujano, Clínica Las Condes",
-    "photo": "javier-mora.jpg"
+    "photo": "javier-mora.jpg",
+    "short_bio": "Creó y lidera la Unidad de Ciencia de Datos Clínicos de Clínica Las Condes.",
+    "bio": "El Dr. Javier Mora es cardiocirujano y especialista en ciencia de datos aplicada a datos clínicos. Ejerce en Clínica las Condes y en Hospital Sótero del Río. Ha sido profesor del Departamento de Cirugía de la Facultad de Medicina de la Universidad de Chile, y actualmente es académico de la Universidad Finis Terrae. Creó la Unidad de Ciencia de Datos Clínicos en Clínica Las Condes. El Dr. Mora también lideró el Centro de Innovacion en Salud de Clínica Las Condes."
   }
 ]

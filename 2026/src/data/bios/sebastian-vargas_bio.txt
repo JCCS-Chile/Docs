@@ -1,0 +1,5 @@
+Sebastián Vargas Yáñez es CEO y fundador de TTPSEC, consultora especializada en ciberseguridad industrial (OT/ICS) y protección de infraestructuras críticas en Latinoamérica. Cuenta con más de 18 años de experiencia en ciberseguridad, gestión de riesgos y resiliencia operacional, asesorando a organizaciones de los sectores energía, minería, puertos, banca y sector público.
+
+Previamente se desempeñó como CISO del Coordinador Eléctrico Nacional y lideró el CSIRT del sector financiero chileno en Redbanc. Su experiencia abarca el gobierno de la ciberseguridad, la protección de sistemas industriales, la gestión de incidentes y el cumplimiento de marcos internacionales como IEC 62443, ISO/IEC 27001 y NIST CSF.
+
+Además de su actividad profesional, dirige programas de formación en ciberseguridad industrial, ejerce docencia de posgrado en diversas universidades de Chile y Latinoamérica, y desarrolla investigación en inteligencia artificial aplicada a la ciberseguridad y protección de infraestructuras críticas.

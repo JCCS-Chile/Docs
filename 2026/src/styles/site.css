@@ -284,6 +284,105 @@ body {
   line-height: 1.5;
 }
 
+.person-bio {
+  margin-top: 0.8rem;
+}
+
+.person-bio-details {
+  color: #475569;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.person-bio-toggle {
+  cursor: pointer;
+  list-style: none;
+}
+
+.person-bio-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.person-bio-toggle:focus-visible {
+  border-radius: 0.35rem;
+  outline: 3px solid rgba(14, 165, 233, 0.3);
+  outline-offset: 0.25rem;
+}
+
+.person-bio-short {
+  display: block;
+}
+
+.person-bio-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.55rem;
+  color: #0284c7;
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.person-bio-toggle:hover .person-bio-action {
+  color: #075985;
+}
+
+.person-bio-less {
+  display: none;
+}
+
+.person-bio-chevron {
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: transform 180ms ease;
+}
+
+.person-bio-details[open] .person-bio-short,
+.person-bio-details[open] .person-bio-more {
+  display: none;
+}
+
+.person-bio-details[open] .person-bio-less {
+  display: inline;
+}
+
+.person-bio-details[open] .person-bio-chevron {
+  transform: rotate(180deg);
+}
+
+.person-bio-long {
+  padding-top: 0.35rem;
+}
+
+.person-bio-long p {
+  margin: 0.7rem 0 0;
+}
+
+.person-bio-long p:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 640px) {
+  .speaker-card:has(.person-bio-details[open]) {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  }
+
+  .speaker-card:has(.person-bio-details[open]) .speaker-photo-wrap {
+    aspect-ratio: auto;
+    min-height: 100%;
+  }
+
+  .speaker-card:has(.person-bio-details[open]) .speaker-details {
+    padding: clamp(1.4rem, 3vw, 2rem);
+  }
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -352,7 +451,8 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .speaker-card,
-  .speaker-photo {
+  .speaker-photo,
+  .person-bio-chevron {
     transition: none;
   }
 }

@@ -2,6 +2,7 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import team from "../data/organizing-team.json";
+import PersonBio from "./PersonBio.astro";
 
 const { basePath = "./" } = Astro.props;
 const initials = (name) => name.split(" ").map((part) => part[0]).slice(0, 2).join("");
@@ -37,6 +38,7 @@ const hasPhoto = (photo) => existsSync(join(process.cwd(), "public", "assets", "
           ) : member.name}
         </h3>
         <p class="speaker-role">{member.role}</p>
+        <PersonBio person={member} />
         {member.url && (
           <a class="team-profile-link" href={member.url} target="_blank" rel="noopener noreferrer">
             LinkedIn <span aria-hidden="true">↗</span>

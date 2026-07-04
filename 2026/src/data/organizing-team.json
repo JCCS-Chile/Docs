@@ -3,36 +3,48 @@
     "name": "Claudio Álvarez",
     "role": "Profesor Asociado, Universidad de los Andes",
     "photo": "claudio-alvarez.jpg",
-    "url": "https://www.linkedin.com/in/claudioalvarezgomez/"
+    "url": "https://www.linkedin.com/in/claudioalvarezgomez/",
+    "short_bio": "Lidera proyectos de I+D en ciberseguridad y educación, y es editor asociado de IEEE Transactions on Learning Technologies.",
+    "bio": "Claudio Álvarez es Profesor Asociado de la Facultad de Ingeniería y Ciencias Aplicadas de la Universidad de los Andes. Es Doctor en Ciencias de la Ingeniería e Ingeniero Civil Industrial por la Pontificia Universidad Católica de Chile. Su investigación se centra en la ciberseguridad, la inteligencia artificial, la informática educativa y el diseño de tecnologías para apoyar la colaboración, la toma de decisiones y el desarrollo de competencias en contextos profesionales.\n\nHa liderado proyectos de investigación y desarrollo en ciberseguridad y educación, entre ellos HFShield y EthicApp, y es Associate Editor de IEEE Transactions on Learning Technologies. Participa activamente en iniciativas nacionales de ciberseguridad y protección de datos, y ha sido organizador de conferencias internacionales y jornadas especializadas, además de colaborar habitualmente con medios de comunicación en temas relacionados con ciberseguridad, regulación tecnológica e inteligencia artificial."
   },
   {
     "name": "Pía Salas",
     "role": "Vicepresidente, Alianza Chilena de Ciberseguridad",
     "photo": "pia-salas.jpg",
-    "url": "https://www.linkedin.com/in/piasalas/"
+    "url": "https://www.linkedin.com/in/piasalas/",
+    "short_bio": "Consolidó Fortinet en Chile durante más de seis años y hoy impulsa la colaboración nacional en ciberseguridad.",
+    "bio": "Pía Salas es una ejecutiva con más de 25 años de experiencia en la industria tecnológica, liderando estrategias de crecimiento, desarrollo de negocios y transformación comercial en empresas multinacionales. Actualmente es Executive Vice President (EVP) de Ventas para Latinoamérica en ITMore Group, tras desempeñarse durante más de seis años como Country Manager de Fortinet Chile, donde lideró la consolidación de la compañía en el mercado nacional.\n\nPreviamente ocupó posiciones de liderazgo comercial en Cisco, HP e Ingram Micro, desarrollando una amplia experiencia en el ecosistema tecnológico y de ciberseguridad de la región. Se caracteriza por una visión estratégica del negocio, el desarrollo de equipos de alto desempeño y la construcción de relaciones de largo plazo con clientes y socios tecnológicos. Además, es vicepresidenta de la Alianza Chilena de Ciberseguridad, promoviendo la colaboración entre la industria, la academia y el sector público para fortalecer el ecosistema nacional de ciberseguridad."
   },
   {
     "name": "Hernán Astudillo",
     "role": "Profesor Titular, Universidad Andrés Bello",
     "photo": "hernan-astudillo.jpg",
-    "url": "https://www.linkedin.com/in/hernanastudillo/"
+    "url": "https://www.linkedin.com/in/hernanastudillo/",
+    "short_bio": "Dirige el Doctorado en Ingeniería de la UNAB y es referente en arquitectura e ingeniería de software.",
+    "bio": "Hernán Astudillo es profesor Titular en la Universidad Andrés Bello. Actualmente dirige el Programa de Doctorado en Ingeniería. Ha realizado investigación, docencia y publicación en varias áreas de TI, incluyendo arquitectura e ingeniería de software, análisis y diseño de sistemas, diseño de lenguajes de programación, y tecnologías de bases de datos. Sus principales intereses y trabajos recientes están en la arquitectura de software, el proceso de desarrollo de software y la mejora de capacidades.\n\nEl Dr. Astudillo obtuvo su título de Ingeniero en Informática en la Universidad Técnica Federico Santa María, Chile, y un Ph.D. en Georgia Tech, Estados Unidos."
   },
   {
     "name": "Maurizio Mattoli",
     "role": "Director, Centro de Evaluación de Tecnologías Sanitarias Digitales, Universidad del Desarrollo",
     "photo": "maurizio-mattoli.jpg",
-    "url": "https://www.linkedin.com/in/mauriziomattoli/"
+    "url": "https://www.linkedin.com/in/mauriziomattoli/",
+    "short_bio": "Ha dirigido centros pioneros de informática biomédica y hoy lidera la evaluación de tecnologías sanitarias digitales en la UDD.",
+    "bio": "Maurizio Mattoli es Director del Centro de Evaluación de Tecnologías Sanitarias Digitales e investigador del Centro de Informática Biomédica (ICIM) de la Facultad de Medicina de la Universidad del Desarrollo. Su trabajo se sitúa en la intersección entre la salud digital, la informática biomédica, la telemedicina, la evaluación de tecnologías sanitarias, la ciberseguridad, la gobernanza de datos y la inteligencia artificial responsable aplicada a la salud.\n\nA lo largo de su trayectoria ha liderado iniciativas académicas, de investigación y de transformación digital en instituciones públicas y privadas, participando en proyectos nacionales de salud digital, telemedicina e informática clínica. Anteriormente dirigió el Centro de Informática Biomédica de la Universidad del Desarrollo y fue subdirector del Centro de Informática Médica y Telemedicina de la Universidad de Chile. Su labor se orienta a promover la incorporación segura, ética y efectiva de las tecnologías digitales y la inteligencia artificial en los sistemas de salud."
   },
   {
     "name": "Gabriel Bergel",
     "role": "Presidente, 8.8 & Líder de Plataforma Estratégica de Salud, Alianza Chilena de Ciberseguridad",
     "photo": "gabriel-bergel.jpg",
-    "url": "https://www.linkedin.com/in/gabrielbergel/"
+    "url": "https://www.linkedin.com/in/gabrielbergel/",
+    "short_bio": "Fundó y preside la Fundación de Ciberseguridad 8.8, referente regional en cultura y comunidad de seguridad digital.",
+    "bio": "Gabriel Bergel es un ejecutivo y referente en ciberseguridad con más de veinte años de experiencia en gestión de riesgos, respuesta a incidentes, resiliencia organizacional y seguridad de la información. Actualmente es CEO de Mantis y presidente de la Fundación de Ciberseguridad 8.8, desde donde impulsa iniciativas para fortalecer la cultura de ciberseguridad y promover una sociedad digital más segura e inclusiva.\n\nA lo largo de su trayectoria ha liderado áreas de ciberseguridad en organizaciones nacionales e internacionales, incluyendo Telefónica Tech, Kyndryl, Transbank y el sector financiero. Es miembro del Comité de Programa del Security Analyst Summit (SAS) de Kaspersky, copreside el Latin American Advisory Council de ISC2 y ha desempeñado un rol activo en la creación y fortalecimiento de diversas iniciativas que han contribuido al desarrollo de la comunidad de ciberseguridad en Chile y Latinoamérica."
   },
   {
     "name": "Carlos Monroy",
     "role": "Subgerente de Ciberseguridad, Grupo Alemana",
     "photo": "carlos-monroy.jpg",
-    "url": null
+    "url": null,
+    "short_bio": null,
+    "bio": null
   }
 ]
