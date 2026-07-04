@@ -4,19 +4,19 @@ import PersonBio from "./PersonBio.astro";
 
 const { basePath = "./" } = Astro.props;
 const speakerOrder = [
-  "Felipe Harboe",
-  "José Fernández",
-  "Jorge Herrera",
-  "Romina Torres",
-  "Felix Liberona",
-  "Dmitri Zaroubine",
-  "Cristián Donaire",
-  "Javier Mora",
-  "Gabriel Bergel",
-  "Sebastián Vargas",
+  "felipe-harboe.jpg",
+  "jose-fernandez.jpg",
+  "jorge-herrera.jpg",
+  "romina-torres.jpg",
+  "felix-liberona.jpg",
+  "dmtri-zaroubine.jpg",
+  "cristian-donaire.jpg",
+  "javier-mora.jpg",
+  "gabriel-bergel.jpg",
+  "sebastian-vargas.jpg",
 ];
-const speakersByName = new Map(speakers.map((speaker) => [speaker.name, speaker]));
-const orderedSpeakers = speakerOrder.map((name) => speakersByName.get(name)).filter(Boolean);
+const speakersByPhoto = new Map(speakers.map((speaker) => [speaker.photo, speaker]));
+const orderedSpeakers = speakerOrder.map((photo) => speakersByPhoto.get(photo)).filter(Boolean);
 ---
 
 <div id="speakers" class="speakers-block" aria-labelledby="speakers-title">
