@@ -33,5 +33,12 @@
     "logo": "8_8-500px.png",
     "tier": "secondary",
     "width": 200
+  },
+  {
+    "name": "trendTIC",
+    "url": "https://www.trendtic.cl/",
+    "logo": "logo-trendtic-500px.png",
+    "tier": "secondary",
+    "width": 200
   }
 ]
