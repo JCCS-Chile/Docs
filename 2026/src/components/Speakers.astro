@@ -42,9 +42,16 @@ const orderedSpeakers = speakerOrder.map((photo) => speakersByPhoto.get(photo)).
           />
         </div>
         <div class="speaker-details">
-          <h4 class="speaker-name">{speaker.name}</h4>
+          <h4 class="speaker-name">
+            <a href={speaker.url} target="_blank" rel="noopener noreferrer" title={`Ver el perfil de ${speaker.name} en LinkedIn`}>
+              {speaker.name}
+            </a>
+          </h4>
           <p class="speaker-role">{speaker.role}</p>
           <PersonBio person={speaker} />
+          <a class="team-profile-link" href={speaker.url} target="_blank" rel="noopener noreferrer">
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </article>
     ))}

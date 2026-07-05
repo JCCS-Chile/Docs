@@ -406,12 +406,12 @@ body {
   min-height: 10rem;
 }
 
-.team-card .speaker-name a {
+.speaker-name a {
   color: inherit;
   text-decoration: none;
 }
 
-.team-card .speaker-name a:hover {
+.speaker-name a:hover {
   color: #0284c7;
 }
 
