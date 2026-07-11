@@ -230,6 +230,20 @@ body {
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
+@media (min-width: 1280px) {
+  .speakers-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .speakers-grid > .speaker-card {
+    grid-column: span 2;
+  }
+
+  .speakers-grid > .speaker-card:nth-last-child(3):nth-child(4n + 1) {
+    grid-column: 2 / span 2;
+  }
+}
+
 .speaker-card {
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.22);

@@ -8,10 +8,11 @@ const speakerOrder = [
   "jose-fernandez.jpg",
   "jorge-herrera.jpg",
   "romina-torres.jpg",
-  "felix-liberona.jpg",
   "dmtri-zaroubine.jpg",
-  "cristian-donaire.jpg",
+  "jaime-deloshoyos.jpg",
   "javier-mora.jpg",
+  "cristian-donaire.jpg",
+  "felix-liberona.jpg",
   "gabriel-bergel.jpg",
   "sebastian-vargas.jpg",
 ];
@@ -43,15 +44,21 @@ const orderedSpeakers = speakerOrder.map((photo) => speakersByPhoto.get(photo)).
         </div>
         <div class="speaker-details">
           <h4 class="speaker-name">
-            <a href={speaker.url} target="_blank" rel="noopener noreferrer" title={`Ver el perfil de ${speaker.name} en LinkedIn`}>
-              {speaker.name}
-            </a>
+            {speaker.url ? (
+              <a href={speaker.url} target="_blank" rel="noopener noreferrer" title={`Ver el perfil de ${speaker.name} en LinkedIn`}>
+                {speaker.name}
+              </a>
+            ) : (
+              speaker.name
+            )}
           </h4>
           <p class="speaker-role">{speaker.role}</p>
           <PersonBio person={speaker} />
-          <a class="team-profile-link" href={speaker.url} target="_blank" rel="noopener noreferrer">
-            LinkedIn <span aria-hidden="true">↗</span>
-          </a>
+          {speaker.url && (
+            <a class="team-profile-link" href={speaker.url} target="_blank" rel="noopener noreferrer">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          )}
         </div>
       </article>
     ))}

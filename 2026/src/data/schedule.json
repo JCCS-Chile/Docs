@@ -14,11 +14,12 @@
   { "time": "12:50", "category": "Bloque 4 · Protección de Datos y Uso Secundario", "activity": "Presentación sponsor", "duration": "20 min" },
   { "time": "13:10", "category": "Bloque 4 · Protección de Datos y Uso Secundario", "activity": "Presentación oral", "duration": "10 min" },
   { "time": "13:20", "category": "Almuerzo", "activity": "Almuerzo", "detail": "Espacio de networking", "duration": "60 min" },
-  { "time": "14:20", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Keynote", "duration": "25 min", "speakers": ["Romina Torres"] },
-  { "time": "14:45", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Presentación sponsor", "duration": "20 min" },
-  { "time": "15:05", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Presentación oral", "duration": "10 min" },
-  { "time": "15:15", "category": "Workshop", "activity": "Workshop práctico", "detail": "Ejercicio interactivo de gestión de incidentes en entornos de salud", "speakers": ["Gabriel Bergel", "Sebastián Vargas"] },
-  { "time": "16:15", "category": "Pausa", "activity": "Coffee & Cóctel", "detail": "Networking informal", "duration": "20 min" },
-  { "time": "16:35", "category": "Cierre", "activity": "Cierre estratégico", "detail": "5 Acciones Prioritarias de Ciberseguridad en Salud para el 2027" },
-  { "time": "16:50", "category": "Fin", "activity": "Despedida", "detail": "Cierre oficial de la jornada" }
+  { "time": "14:20", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Charla técnica #1", "duration": "25 min", "speakers": ["Romina Torres"] },
+  { "time": "14:45", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Charla técnica #2", "duration": "25 min", "speakers": ["Dr. Jaime de los Hoyos"] },
+  { "time": "15:10", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Presentación sponsor", "duration": "20 min" },
+  { "time": "15:30", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Presentación oral", "duration": "10 min" },
+  { "time": "15:40", "category": "Workshop", "activity": "Workshop práctico", "detail": "Ejercicio interactivo de gestión de incidentes en entornos de salud", "speakers": ["Gabriel Bergel", "Sebastián Vargas"] },
+  { "time": "16:40", "category": "Pausa", "activity": "Coffee & Cóctel", "detail": "Networking informal", "duration": "20 min" },
+  { "time": "17:00", "category": "Cierre", "activity": "Cierre estratégico", "detail": "5 Acciones Prioritarias de Ciberseguridad en Salud para el 2027" },
+  { "time": "17:15", "category": "Fin", "activity": "Despedida", "detail": "Cierre oficial de la jornada" }
 ]

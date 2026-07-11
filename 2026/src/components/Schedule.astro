@@ -12,6 +12,12 @@ const toneFor = (category) => {
 };
 
 const speakerDetails = new Map(speakers.map((speaker) => [speaker.name, speaker.role]));
+const getSpeakerRole = (name) => {
+  const exactRole = speakerDetails.get(name);
+  if (exactRole) return exactRole;
+
+  return speakers.find((speaker) => speaker.name.includes(name) || name.includes(speaker.name))?.role;
+};
 const announcedSpeakers = new Set();
 const scheduleWithSpeakerDetails = schedule.map((item) => ({
   ...item,
@@ -21,7 +27,7 @@ const scheduleWithSpeakerDetails = schedule.map((item) => ({
 
     return {
       name,
-      role: showRole ? speakerDetails.get(name) : undefined,
+      role: showRole ? getSpeakerRole(name) : undefined,
     };
   }),
 }));
