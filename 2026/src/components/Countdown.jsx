@@ -5,8 +5,12 @@ const MINUTE = 60 * SECOND;
 const HOUR = 60 * MINUTE;
 const DAY = 24 * HOUR;
 
+function getRemainingMs(targetDate) {
+  return targetDate.getTime() - Date.now();
+}
+
 function formatTimeLeft(targetDate) {
-  const remaining = Math.max(targetDate.getTime() - Date.now(), 0);
+  const remaining = Math.max(getRemainingMs(targetDate), 0);
 
   return {
     days: Math.floor(remaining / DAY),
@@ -28,8 +32,18 @@ export default function Countdown() {
     }
 
     const updateCountdowns = () => {
+      let hasActiveCountdown = false;
+
       countdowns.forEach((countdown) => {
         const target = new Date(countdown.dataset.countdownTarget);
+        const remaining = getRemainingMs(target);
+
+        if (remaining <= 0) {
+          countdown.closest("[data-countdown-section]")?.remove();
+          return;
+        }
+
+        hasActiveCountdown = true;
         const timeLeft = formatTimeLeft(target);
 
         Object.entries(timeLeft).forEach(([unit, value]) => {
@@ -39,10 +53,19 @@ export default function Countdown() {
           }
         });
       });
+
+      return hasActiveCountdown;
     };
 
-    updateCountdowns();
-    const interval = window.setInterval(updateCountdowns, SECOND);
+    if (!updateCountdowns()) {
+      return undefined;
+    }
+
+    const interval = window.setInterval(() => {
+      if (!updateCountdowns()) {
+        window.clearInterval(interval);
+      }
+    }, SECOND);
 
     return () => window.clearInterval(interval);
   }, []);
