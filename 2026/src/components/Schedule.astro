@@ -21,13 +21,15 @@ const getSpeakerRole = (name) => {
 const announcedSpeakers = new Set();
 const scheduleWithSpeakerDetails = schedule.map((item) => ({
   ...item,
-  speakers: item.speakers?.map((name) => {
+  speakers: item.speakers?.map((speakerEntry) => {
+    const name = typeof speakerEntry === "string" ? speakerEntry : speakerEntry.name;
+    const overrideRole = typeof speakerEntry === "string" ? undefined : speakerEntry.role;
     const showRole = !announcedSpeakers.has(name);
     announcedSpeakers.add(name);
 
     return {
       name,
-      role: showRole ? getSpeakerRole(name) : undefined,
+      role: showRole ? overrideRole ?? getSpeakerRole(name) : undefined,
     };
   }),
 }));
