@@ -1,11 +1,43 @@
 [
   {
     "name": "Felipe Harboe",
-    "role": "Socio Principal, H&CO",
+    "role": "Ex-Senador de la República · Socio Principal, H&CO",
     "photo": "felipe-harboe.jpg",
     "url": "https://www.linkedin.com/in/felipe-harboe/",
     "short_bio": "Impulsó la reforma constitucional que reconoció la protección de datos personales como derecho fundamental en Chile.",
     "bio": "Felipe Harboe es especialista en regulación tecnológica, protección de datos personales y ciberseguridad, con una destacada trayectoria en el desarrollo de políticas públicas y marcos regulatorios en estas materias. Fue autor de la reforma constitucional que consagró la protección de los datos personales como un derecho fundamental en Chile y coautor de la nueva legislación sobre protección de datos personales.\n\nEs académico de los diplomados en Protección de Datos y Compliance de la Pontificia Universidad Católica de Chile, así como del Programa Intensivo en Digitalización e Innovación para Servicios Financieros de la Facultad de Economía y Negocios de la Universidad de Chile. Además, se desempeña como consultor internacional en regulación de protección de datos para América Latina y asesora a organizaciones públicas y privadas en gobierno de datos, cumplimiento normativo, gestión de riesgos y estrategia regulatoria."
+  },
+  {
+    "name": "Lorena Donoso",
+    "role": "Profesora Asociada, U. de Chile.\nAbogada, Alt_ Legal",
+    "photo": "lorena-donoso.jpg",
+    "url": "https://www.linkedin.com/in/lorena-donoso-abarca-3ab49b16/",
+    "short_bio": "Especialista con más de 20 años de experiencia en telecomunicaciones, protección de datos personales, seguridad de la información y derecho tecnológico.",
+    "bio": "Lorena Donoso cuenta con más de 20 años de experiencia asesorando a instituciones públicas y privadas en Derecho de las Telecomunicaciones, Protección de Datos Personales, Seguridad de la Información, Firma y documento electrónico, Delincuencia tecnológica, Derecho Sanitario, Derecho a la Información y Acceso a la Información Pública.\n\nAsimismo, ha asesorado al Gobierno de Chile en la elaboración y discusión parlamentaria de diversos proyectos de ley, destacando los de Protección de Datos Personales, Delitos Informáticos, Telemedicina, Televisión Digital, Régimen Concesional de Telecomunicaciones, Firmas y documentos electrónicos, entre otros.\n\nParticipó en la redacción de reglamentos de aplicación general y normas técnicas en el área de Derecho y Tecnologías.\n\nAdemás es Consejera del Instituto Chileno de Derecho y Tecnologías, profesora Asociada de la Universidad de Chile, Asesora Legal en el Ministerio de Salud y Árbitro de Nic Chile.\n\nHa sido profesora de pregrado en la Facultad de Economía de la Universidad Alberto Hurtado, en el área de Derecho a la Información y Acceso a la Información Pública, además de creadora y directora del Centro de Estudios en Derecho Informático de la Universidad de Chile (1998 a 2009)."
+  },
+  {
+    "name": "Jocelyn Arteaga",
+    "role": "CISO, Bupa Chile",
+    "photo": "joceyln-arteaga.jpg",
+    "url": "https://www.linkedin.com/in/jocelyn-arteaga/?locale=en",
+    "short_bio": "CISO de Bupa Chile, referente en ciberseguridad, cumplimiento, gobierno de datos y resiliencia digital.",
+    "bio": "Jocelyn Arteaga es CISO de Bupa Chile y una profesional con sólida trayectoria en ciberseguridad, cumplimiento y gestión tecnológica. Ingeniera en Informática, Global MBA y Master of Science in Management, ha orientado su trabajo a proteger activos digitales, fortalecer el gobierno de datos y promover una cultura de resiliencia frente a riesgos digitales. Desde su rol en el sector salud, impulsa una visión de la ciberseguridad como componente esencial de la confianza, la continuidad operacional y el cuidado de las personas. Su liderazgo ha sido reconocido en la industria, destacando entre las mujeres referentes en TI y ciberseguridad en Chile."
+  },
+  {
+    "name": "Dr. José Fernández",
+    "role": "CEO, Rayen Salud",
+    "photo": "jose-fernandez.jpg",
+    "url": "https://www.linkedin.com/in/josejfernandez/",
+    "short_bio": "Creó la primera Unidad de Informática Médica del MINSAL y lideró SIDRA, clave para la historia clínica electrónica pública.",
+    "bio": "José Javier Fernández Figueroa es médico cirujano de la Universidad de Santiago de Chile, especialista en salud pública, con un MBA y estudios de posgrado en salud pública e inteligencia artificial. Cuenta con más de dos décadas de experiencia liderando procesos de transformación digital en el sector salud, integrando la práctica clínica, la gestión sanitaria y las tecnologías de la información.\n\nEn el Ministerio de Salud de Chile creó la primera Unidad de Informática Médica y lideró la estrategia SIDRA, impulsando la adopción de la historia clínica electrónica en la red pública de salud. Actualmente es CEO de Rayen Salud, donde ha encabezado la implementación de soluciones de historia clínica electrónica en más de 1.200 establecimientos de salud en Chile y otros países de la región, promoviendo altos estándares de calidad y seguridad de la información. Es además fundador y vicepresidente de PROSALUD Chile AG, exdirector de ACHISA y autor de diversos libros sobre salud digital, inteligencia artificial y transformación tecnológica en salud."
+  },
+  {
+    "name": "Dr. Jaime de los Hoyos",
+    "role": "Jefe del Departamento de Informática Biomédica, Clínica Alemana de Santiago",
+    "photo": "jaime-deloshoyos.jpg",
+    "url": "https://www.linkedin.com/in/jdeloshoyos/",
+    "short_bio": "Lidera la transformación digital de procesos clínicos desde el Departamento de Informática Biomédica de Clínica Alemana.",
+    "bio": "Dr. Jaime de los Hoyos es médico e informático médico, con una destacada trayectoria en el liderazgo e implementación de sistemas de información para la salud. Actualmente se desempeña como Jefe del Departamento de Informática Biomédica de Clínica Alemana de Santiago, donde lidera equipos multidisciplinarios orientados a la transformación digital de los procesos clínicos. Su experiencia incluye el levantamiento de requerimientos clínicos, el diseño e implementación de soluciones informáticas para el sistema de salud, y el análisis de datos para apoyar la toma de decisiones. Anteriormente trabajó en Red de Salud UC CHRISTUS, Clínica Universidad de los Andes y el Ministerio de Salud de Chile. Sus principales áreas de interés incluyen la informática médica, la innovación tecnológica y la inteligencia artificial aplicada a la salud."
   },
   {
     "name": "Cristián Donaire",
@@ -56,14 +88,6 @@
     "bio": "Jorge Herrera es Experto en Interoperabilidad Digital en Salud, con más de 33 años de experiencia liderando proyectos de transformación tecnológica en el sector salud. Se desempeñó como Director del Departamento de TICs del MINSAL, donde impulsó iniciativas de interoperabilidad clínica, modernización de sistemas de información, infraestructura tecnológica entre otras estrategias digitales a nivel nacional."
   },
   {
-    "name": "Dr. José Fernández",
-    "role": "CEO, Rayen Salud",
-    "photo": "jose-fernandez.jpg",
-    "url": "https://www.linkedin.com/in/josejfernandez/",
-    "short_bio": "Creó la primera Unidad de Informática Médica del MINSAL y lideró SIDRA, clave para la historia clínica electrónica pública.",
-    "bio": "José Javier Fernández Figueroa es médico cirujano de la Universidad de Santiago de Chile, especialista en salud pública, con un MBA y estudios de posgrado en salud pública e inteligencia artificial. Cuenta con más de dos décadas de experiencia liderando procesos de transformación digital en el sector salud, integrando la práctica clínica, la gestión sanitaria y las tecnologías de la información.\n\nEn el Ministerio de Salud de Chile creó la primera Unidad de Informática Médica y lideró la estrategia SIDRA, impulsando la adopción de la historia clínica electrónica en la red pública de salud. Actualmente es CEO de Rayen Salud, donde ha encabezado la implementación de soluciones de historia clínica electrónica en más de 1.200 establecimientos de salud en Chile y otros países de la región, promoviendo altos estándares de calidad y seguridad de la información. Es además fundador y vicepresidente de PROSALUD Chile AG, exdirector de ACHISA y autor de diversos libros sobre salud digital, inteligencia artificial y transformación tecnológica en salud."
-  },
-  {
     "name": "Romina Torres, Dr. Ing.",
     "role": "Profesora Asociada, UAI. Investigadora CENIA, CPS-RTC y Data Observatory",
     "photo": "romina-torres.jpg",
@@ -80,19 +104,11 @@
     "bio": "El Dr. Javier Mora es cardiocirujano y especialista en ciencia de datos aplicada a datos clínicos. Ejerce en Clínica las Condes y en Hospital Sótero del Río. Ha sido profesor del Departamento de Cirugía de la Facultad de Medicina de la Universidad de Chile, y actualmente es académico de la Universidad Finis Terrae. Creó la Unidad de Ciencia de Datos Clínicos en Clínica Las Condes. El Dr. Mora también lideró el Centro de Innovacion en Salud de Clínica Las Condes."
   },
   {
-    "name": "Dr. Jaime de los Hoyos",
-    "role": "Jefe del Departamento de Informática Biomédica, Clínica Alemana de Santiago",
-    "photo": "jaime-deloshoyos.jpg",
-    "url": "https://www.linkedin.com/in/jdeloshoyos/",
-    "short_bio": "Lidera la transformación digital de procesos clínicos desde el Departamento de Informática Biomédica de Clínica Alemana.",
-    "bio": "Dr. Jaime de los Hoyos es médico e informático médico, con una destacada trayectoria en el liderazgo e implementación de sistemas de información para la salud. Actualmente se desempeña como Jefe del Departamento de Informática Biomédica de Clínica Alemana de Santiago, donde lidera equipos multidisciplinarios orientados a la transformación digital de los procesos clínicos. Su experiencia incluye el levantamiento de requerimientos clínicos, el diseño e implementación de soluciones informáticas para el sistema de salud, y el análisis de datos para apoyar la toma de decisiones. Anteriormente trabajó en Red de Salud UC CHRISTUS, Clínica Universidad de los Andes y el Ministerio de Salud de Chile. Sus principales áreas de interés incluyen la informática médica, la innovación tecnológica y la inteligencia artificial aplicada a la salud."
-  },
-  {
-    "name": "Lorena Donoso",
-    "role": "Profesora Asociada, U. de Chile.\nAbogada, Alt_ Legal",
-    "photo": "lorena-donoso.jpg",
-    "url": "https://www.linkedin.com/in/lorena-donoso-abarca-3ab49b16/",
-    "short_bio": "Especialista con más de 20 años de experiencia en telecomunicaciones, protección de datos personales, seguridad de la información y derecho tecnológico.",
-    "bio": "Lorena Donoso cuenta con más de 20 años de experiencia asesorando a instituciones públicas y privadas en Derecho de las Telecomunicaciones, Protección de Datos Personales, Seguridad de la Información, Firma y documento electrónico, Delincuencia tecnológica, Derecho Sanitario, Derecho a la Información y Acceso a la Información Pública.\n\nAsimismo, ha asesorado al Gobierno de Chile en la elaboración y discusión parlamentaria de diversos proyectos de ley, destacando los de Protección de Datos Personales, Delitos Informáticos, Telemedicina, Televisión Digital, Régimen Concesional de Telecomunicaciones, Firmas y documentos electrónicos, entre otros.\n\nParticipó en la redacción de reglamentos de aplicación general y normas técnicas en el área de Derecho y Tecnologías.\n\nAdemás es Consejera del Instituto Chileno de Derecho y Tecnologías, profesora Asociada de la Universidad de Chile, Asesora Legal en el Ministerio de Salud y Árbitro de Nic Chile.\n\nHa sido profesora de pregrado en la Facultad de Economía de la Universidad Alberto Hurtado, en el área de Derecho a la Información y Acceso a la Información Pública, además de creadora y directora del Centro de Estudios en Derecho Informático de la Universidad de Chile (1998 a 2009)."
+    "name": "Narciso Basic",
+    "role": "Business Information Security Officer para Chile, Perú y Ecuador, Equifax",
+    "photo": "narciso-basic.jpg",
+    "url": "https://www.linkedin.com/in/narciso-basic-06b1765/",
+    "short_bio": "Fortalece la ciberseguridad, gestión de riesgos y protección de datos de Equifax en Chile, Perú y Ecuador.",
+    "bio": "Narciso Basic es Business Information Security Officer para Chile, Perú y Ecuador en Equifax, con una trayectoria orientada a la seguridad de la información, la gestión de riesgos y la protección de datos en entornos corporativos de alta criticidad. Desde su rol, ha contribuido a fortalecer la cultura de ciberseguridad, promoviendo la idea de que la seguridad es una responsabilidad compartida por toda la organización. Su experiencia combina gestión tecnológica, cumplimiento, gobierno de datos y comunicación de buenas prácticas frente a amenazas digitales. Además, ha participado en espacios de divulgación y conversación sectorial sobre ciberseguridad, aportando una mirada práctica desde la industria financiera y de datos."
   }
 ]

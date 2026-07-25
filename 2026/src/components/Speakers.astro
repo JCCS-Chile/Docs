@@ -6,13 +6,15 @@ const { basePath = "./" } = Astro.props;
 const speakerOrder = [
   "felipe-harboe.jpg",
   "lorena-donoso.jpg",
+  "joceyln-arteaga.jpg",
   "jose-fernandez.jpg",
+  "cristian-donaire.jpg",
   "jaime-deloshoyos.jpg",
   "javier-mora.jpg",
-  "jorge-herrera.jpg",
-  "cristian-donaire.jpg",
-  "romina-torres.jpg",
+  "narciso-basic.jpg",
   "dmtri-zaroubine.jpg",
+  "jorge-herrera.jpg",
+  "romina-torres.jpg",
   "felix-liberona.jpg",
   "gabriel-bergel.jpg",
   "sebastian-vargas.jpg",
@@ -23,7 +25,7 @@ const orderedSpeakers = speakerOrder.map((photo) => speakersByPhoto.get(photo)).
 
 <div id="speakers" class="speakers-block" aria-labelledby="speakers-title">
   <div class="speakers-heading">
-    <div class="section-label mb-5">Primeros speakers confirmados</div>
+    <div class="section-label mb-5">Speakers</div>
     <h3 id="speakers-title" class="font-display font-extrabold text-3xl sm:text-4xl text-brand-900 leading-tight">
       Expertos que lideran <span class="gradient-text">la conversación</span>
     </h3>

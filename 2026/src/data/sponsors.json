@@ -14,6 +14,13 @@
     "width": 360
   },
   {
+    "name": "Equifax",
+    "url": "https://www.equifax.cl/",
+    "logo": "logo-equifax-500px.png",
+    "tier": "primary",
+    "width": 360
+  },
+  {
     "name": "CENS",
     "url": "https://www.cens.cl",
     "logo": "cens.png",

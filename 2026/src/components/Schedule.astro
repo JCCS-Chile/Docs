@@ -3,7 +3,7 @@ import schedule from "../data/schedule.json";
 import speakers from "../data/speakers.json";
 
 const toneFor = (category) => {
-  if (category === "Pausa") return "pause";
+  if (category.startsWith("Pausa")) return "pause";
   if (category === "Almuerzo") return "meal";
   if (category === "Workshop") return "workshop";
   if (category === "Cierre" || category === "Fin") return "closing";
