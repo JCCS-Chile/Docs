@@ -1,1 +1,12 @@
 .DS_Store
+
+# Artefactos locales de mail merge (pueden contener datos personales o credenciales)
+/2026/mailings/.venv-mailmerge/
+/2026/mailings/**/__pycache__/
+/2026/mailings/**/mailmerge_server.conf
+/2026/mailings/**/mailmerge_server.local.conf
+/2026/mailings/**/.env
+/2026/mailings/**/output/
+/2026/mailings/**/sent/
+/2026/mailings/speakers/2026-speaker-info.csv
+/2026/mailings/speakers/2026-speaker-test-recipients.csv

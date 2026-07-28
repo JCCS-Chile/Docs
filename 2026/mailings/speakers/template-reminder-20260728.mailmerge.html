@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <body style="margin:0; padding:0; background-color:#f5f7fa; font-family:Arial, Helvetica, sans-serif; color:#1f2937;">
+    <div style="max-width:640px; margin:0 auto; padding:32px 20px;">
+      <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+        <div style="padding:24px 28px; background:#0b4f8a; color:#ffffff;">
+          <div style="font-size:20px; font-weight:700;">
+            Tercera Jornada Chilena de Ciberseguridad en Salud
+          </div>
+        </div>
+
+        <div style="padding:28px; font-size:16px; line-height:1.55;">
+          <p style="margin-top:0;">Estimado/a {{Nombre}},</p>
+
+          <p>
+            Junto con saludarle, queremos agradecerle nuevamente por participar como speaker
+            en la <strong>Tercera Jornada Chilena de Ciberseguridad en Salud</strong>, que se
+            realizará el miércoles 12 de agosto en el Aula Magna de la Biblioteca de la
+            Universidad de los Andes.
+          </p>
+
+          <p>Le recordamos que su participación está programada en el siguiente bloque:</p>
+
+          <div style="margin:20px 0; padding:18px 20px; background:#eef6fc; border-left:4px solid #0b4f8a; font-weight:600; color:#123b63;">
+{{ self._TemplateReference__context.resolve('Participación Bloque/Panel') | e | replace('\r\n', '\n') | replace('\r', '\n') | replace('\n', '<br>') | safe }}
+          </div>
+
+          <p>
+            Puede revisar el programa completo de la jornada en:
+            <a href="https://www.jornadacibersalud.cl/2026/#programa"
+              style="color:#0b4f8a; font-weight:600;">
+              www.jornadacibersalud.cl/2026/#programa
+            </a>
+          </p>
+
+          <p>
+            Para una adecuada coordinación, le agradeceremos considerar los siguientes requisitos:
+          </p>
+
+          <ul style="margin:0 0 20px; padding-left:24px;">
+            {% if self._TemplateReference__context.resolve('Entrega Presentación') | trim | upper == 'TRUE' %}
+            <li style="margin-bottom:12px;">
+              <strong>Envío de diapositivas:</strong> Le recordamos enviar su presentación en formato
+              <strong>PPT o PDF</strong> antes del <strong>lunes 10 de agosto</strong>, para realizar
+              las pruebas técnicas y coordinar oportunamente la producción de su bloque. Utilice formato
+              <strong>16:9</strong> y asegúrese de que audios, videos y fuentes queden incrustados en el
+              archivo. Si el archivo excede los <strong>20 MB</strong>, proporcione un enlace de descarga,
+              idealmente mediante Google Drive o WeTransfer. Por favor, entregue la presentación respondiendo
+              este correo, o escribiendo directamente a
+              <a href="mailto:calvarez@uandes.cl" style="color:#0b4f8a;">calvarez@uandes.cl</a>,
+              con copia a <a href="mailto:afuenzalida@alianzaciberseguridad.cl"
+                style="color:#0b4f8a;">afuenzalida@alianzaciberseguridad.cl</a>.
+            </li>
+            {% endif %}
+
+            <li style="margin-bottom:12px;">
+              <strong>Ubicación del evento:</strong> El evento se realizará en el Aula Magna de la
+              Biblioteca de la Universidad de los Andes. Puede revisar el mapa del campus en:
+              <a href="https://www.uandes.cl/universidad/campus/"
+                style="color:#0b4f8a;">www.uandes.cl/universidad/campus/</a>
+            </li>
+
+            <li style="margin-bottom:12px;">
+              <strong>Presentación en el lugar:</strong> Le agradeceremos presentarse en el Aula Magna
+              de Biblioteca UANDES al menos <strong>15 minutos antes de su participación</strong>, para
+              coordinar oportunamente los aspectos técnicos y de producción.
+            </li>
+
+            <li>
+              <strong>Estacionamiento:</strong> Le solicitamos confirmar la
+              <strong>patente del vehículo</strong> en el que llegará, con el fin de gestionar la reserva
+              de estacionamiento. Para esto, puede responder el presente correo. El ingreso al Campus
+              de la Universidad de los Andes deberá realizarse por Av. San Carlos de Apoquindo 2200.
+            </li>
+
+            <li style="margin-top:12px;">
+              <strong>Almuerzo:</strong> Todos los speakers están invitados a un almuerzo con el equipo
+              organizador, que se realizará en el espacio de Pérgola (lado norte) de la Biblioteca UANDES,
+              a las 13:35 hrs. Rogamos confirmar su asistencia al almuerzo en la respuesta al presente correo.
+              En esa respuesta también puede indicar restricciones alimentarias.
+            </li>
+
+            <li style="margin-top:12px;">
+              <strong>Foto oficial:</strong> La foto oficial del evento se tomará durante el coffee break de
+              la mañana, de 11:25 a 11:45 hrs. Invitamos cordialmente a todos los speakers a hacerse presentes
+              en la foto.
+            </li>
+
+            <li style="margin-top:12px;">
+              <strong>Certificado:</strong> Si requiere un certificado de participación como speaker,
+              por favor confírmenoslo en la respuesta a este correo.
+            </li>
+          </ul>
+
+          <p>
+            Si surgiera algún imponderable, cambio de agenda o requerimiento especial, por favor
+            comuníquelo a la brevedad a:
+          </p>
+
+          <p style="margin-left:16px;">
+            <strong>Claudio Álvarez</strong><br>
+            Universidad de los Andes<br>
+            +56 9 9079 4951 · <a href="mailto:calvarez@uandes.cl" style="color:#0b4f8a;">calvarez@uandes.cl</a>
+          </p>
+
+          <p style="margin-left:16px;">
+            <strong>Andrea Fuenzalida</strong><br>
+            Alianza Chilena de Ciberseguridad<br>
+            +56 9 5876 7104 · <a href="mailto:afuenzalida@alianzaciberseguridad.cl" style="color:#0b4f8a;">afuenzalida@alianzaciberseguridad.cl</a>
+          </p>
+
+          <p>
+            Muchas gracias por su valiosa contribución a esta jornada.
+          </p>
+
+          <p style="margin-bottom:0;">
+            Saludos cordiales,<br><br>
+            <strong>Claudio Álvarez</strong><br>
+            En representación del comité organizador<br>
+            Tercera Jornada Chilena de Ciberseguridad en Salud
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

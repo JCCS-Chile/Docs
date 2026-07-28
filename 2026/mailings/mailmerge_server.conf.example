@@ -1,0 +1,8 @@
+[smtp_server]
+# Reemplace estos valores por los datos entregados por el proveedor SMTP.
+host = smtp.example.invalid
+port = 587
+security = STARTTLS
+username = correo@ejemplo.cl
+# Máximo de mensajes por minuto. Use 0 para no limitar el envío.
+ratelimit = 20

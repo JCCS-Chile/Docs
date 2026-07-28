@@ -1,0 +1,8 @@
+To: {{ self._TemplateReference__context.resolve('Correo Electrónico Directo') }}
+From: Claudio Álvarez <calvarez1@miuandes.cl>
+Reply-To: calvarez1@miuandes.cl
+Subject: Recordatorio de participación — Tercera Jornada Chilena de Ciberseguridad en Salud
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+{% include 'template-reminder-20260728.mailmerge.html' %}
