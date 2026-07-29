@@ -1,5 +1,12 @@
 [
   {
+    "name": "Michelle Bordachar",
+    "role": "Directora Nacional (S), Agencia Nacional de Ciberseguridad (ANCI)",
+    "photo": "michelle-bordachar.jpg",
+    "short_bio": "Directora Nacional (S) de la Agencia Nacional de Ciberseguridad (ANCI), especializada en ciberseguridad, protección de datos y regulación tecnológica.",
+    "bio": "Michelle Bordachar es Directora Nacional (S) de la Agencia Nacional de Ciberseguridad (ANCI). Abogada de la Universidad de Chile, Magíster en Derecho Internacional por la Universidad de Heidelberg y diplomada en Ciberseguridad por la Universidad de Chile, ha desempeñado un papel clave en el diseño e implementación del marco regulatorio chileno en ciberseguridad y protección de datos. Es además académica del Centro de Estudios en Derecho, Tecnología y Sociedad de la Facultad de Derecho de la Universidad de Chile, donde desarrolla actividades de docencia e investigación en ciberseguridad, protección de datos y regulación tecnológica."
+  },
+  {
     "name": "Felipe Harboe",
     "role": "Ex-Senador de la República · Socio Principal, H&CO",
     "photo": "felipe-harboe.jpg",
