@@ -1,4 +1,4 @@
-To: {{ self._TemplateReference__context.resolve('Correo Electrónico Directo') }}
+To: {{ self._TemplateReference__context.resolve('Correo Electrónico Directo') | trim or self._TemplateReference__context.resolve('Correo Representante') | trim }}
 From: Claudio Álvarez <calvarez1@miuandes.cl>
 Reply-To: calvarez1@miuandes.cl
 Subject: Recordatorio de participación — Tercera Jornada Chilena de Ciberseguridad en Salud
