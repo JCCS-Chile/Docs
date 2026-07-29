@@ -29,6 +29,7 @@ La configuracion Astro vive en `astro.config.mjs` y usa `output: "static"`.
 - `src/layouts/SiteLayout.astro`: HTML base, metadata y hojas CSS heredadas desde `assets/css`.
 - `src/components/SiteHeader.astro`: header compartido y navegacion principal.
 - `src/components/SiteFooter.astro`: footer compartido, enlaces e instituciones.
+- `src/data/schedule.json`: fuente de la agenda visible en la home; `src/components/Schedule.astro` la renderiza. Para cambios de horarios, actividades, duraciones o expositores, editar este archivo.
 - `src/config/site.js`: configuracion central; lee `PUBLIC_REGISTRATION_SITE`.
 - `src/utils/markdown.js`: renderer Markdown simple usado por CFP y privacidad.
 - `src/styles/site.css`: estilos propios del sitio Astro y ajustes del wrapper.
@@ -87,6 +88,7 @@ Solo variables con prefijo `PUBLIC_` se exponen al cliente en Astro/Vite. Reinic
 - Para cambios de contenido del CFP, editar `CFP/index.md`.
 - Para cambios de privacidad, editar `PRIVACY.md`.
 - Para cambios estructurales de la home, preferir migrar trozos desde `src/page.html` hacia componentes Astro nuevos. Evita agrandar mas el HTML heredado salvo cambios puntuales.
+- Para cambios en la agenda visible, editar `src/data/schedule.json`; actualizar tambien `src/page.html` solo si se necesita conservar consistente el bloque heredado de la home.
 - Para interactividad nueva, usar una isla React solo cuando sea necesaria; lo estatico debe quedarse en Astro.
 - El renderer de Markdown en `src/utils/markdown.js` es deliberadamente simple. Si necesitas Markdown mas completo, considera migrar a soporte Markdown nativo de Astro o a una libreria/pipe de remark antes de agregar regex ad hoc complejas.
 

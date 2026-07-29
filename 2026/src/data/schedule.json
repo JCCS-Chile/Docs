@@ -19,8 +19,7 @@
   { "time": "14:55", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Charla técnica", "duration": "25 min", "speakers": ["Dr. Jaime de los Hoyos"] },
   { "time": "15:20", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Presentación sponsor", "duration": "20 min" },
   { "time": "15:40", "category": "Bloque 5 · Inteligencia Artificial y Ciberseguridad", "activity": "Presentación oral", "duration": "10 min" },
-  { "time": "15:50", "category": "Workshop", "activity": "Workshop práctico", "detail": "Ejercicio interactivo de gestión de incidentes en entornos de salud", "speakers": ["Gabriel Bergel", "Sebastián Vargas"] },
-  { "time": "16:50", "category": "Pausa", "activity": "Coffee & Cóctel", "detail": "Networking informal", "duration": "20 min" },
-  { "time": "17:10", "category": "Cierre", "activity": "Cierre estratégico", "detail": "5 Acciones Prioritarias de Ciberseguridad en Salud para el 2027", "speakers": ["Dr. José Fernández"] },
-  { "time": "17:30", "category": "Fin", "activity": "Despedida", "detail": "Cierre oficial de la jornada" }
+  { "time": "15:50", "category": "Workshop", "activity": "Workshop Práctico — Ejercicio interactivo de gestión de incidentes en entornos de salud", "duration": "60 min", "speakers": ["Gabriel Bergel", "Sebastián Vargas"] },
+  { "time": "16:50", "category": "Cierre", "activity": "Cierre Estratégico — 5 Acciones Prioritarias de Ciberseguridad en Salud para el 2027", "detail": "Votación colectiva y resultados", "duration": "20 min", "speakers": ["Dr. José Fernández"] },
+  { "time": "17:10", "category": "Fin", "activity": "Despedida — Cierre oficial de la jornada", "detail": "Coffee & Cóctel · Networking informal" }
 ]
