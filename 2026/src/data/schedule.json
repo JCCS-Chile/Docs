@@ -3,7 +3,7 @@
   { "time": "08:50", "category": "Apertura", "activity": "Foto de Autoridades", "detail": "Foto oficial de las autoridades participantes", "duration": "5 min" },
   { "time": "09:00", "category": "Apertura", "activity": "Bienvenida", "detail": "Autoridad anfitriona" },
   { "time": "09:15", "category": "Bloque 1 · Gobernanza y Cumplimiento Regulatorio", "activity": "Keynote magistral", "duration": "30 min", "speakers": ["Felipe Harboe"] },
-  { "time": "09:45", "category": "Bloque 1 · Gobernanza y Cumplimiento Regulatorio", "activity": "Panel de expertos", "duration": "45 min", "speakers": ["Felipe Harboe", "Lorena Donoso", "Dr. Javier Mora", "Jocelyn Arteaga"] },
+  { "time": "09:45", "category": "Bloque 1 · Gobernanza y Cumplimiento Regulatorio", "activity": "Panel de expertos", "duration": "45 min", "speakers": ["Felipe Harboe", "Lorena Donoso", "Dr. Javier Mora", "Jocelyn Arteaga", { "name": "Pablo Antillanca", "role": "Moderador · Director, revista trendTIC" }] },
   { "time": "10:30", "category": "Bloque 2 · Resiliencia Digital y Continuidad Asistencial", "activity": "Keynote", "duration": "25 min", "speakers": ["Cristián Donaire"] },
   { "time": "10:55", "category": "Bloque 2 · Resiliencia Digital y Continuidad Asistencial", "activity": "Presentación sponsor", "duration": "20 min", "speakers": ["Dmitri Zaroubine"] },
   { "time": "11:15", "category": "Bloque 2 · Resiliencia Digital y Continuidad Asistencial", "activity": "Presentación oral", "duration": "10 min" },
