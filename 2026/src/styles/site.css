@@ -275,6 +275,10 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.directions-heading {
+  scroll-margin-top: 6rem;
+}
+
 .speakers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
