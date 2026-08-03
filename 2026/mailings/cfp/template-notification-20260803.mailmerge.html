@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+
+<body style="margin:0; padding:0; background-color:#f5f7fa; font-family:Arial, Helvetica, sans-serif; color:#1f2937;">
+  <div style="max-width:640px; margin:0 auto; padding:32px 20px;">
+    <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+      <div style="padding:24px 28px; background:#0b4f8a; color:#ffffff;">
+        <div style="font-size:20px; font-weight:700;">
+          Tercera Jornada Chilena de Ciberseguridad en Salud
+        </div>
+      </div>
+
+      <div style="padding:28px; font-size:16px; line-height:1.55;">
+        <p style="margin-top:0;">Estimado/a {{Nombre}},</p>
+
+        <p>
+          Agradecemos sinceramente su contribución titulada
+          <strong>“{{ self._TemplateReference__context.resolve('Título') | e }}”</strong> a la convocatoria de la
+          <strong>Tercera Jornada Chilena de Ciberseguridad en Salud</strong>.
+        </p>
+
+        <p>
+          Seis contribuciones compitieron por cuatro espacios de lightning talks en los
+          bloques 2 a 5 del programa. Todas destacaron por su calidad y relevancia; sin
+          embargo, dada la disponibilidad de espacio en el programa, sólo pudimos aceptar cuatro.
+        </p>
+
+        <p>
+          Además, dado que no recepcionamos suficientes propuestas para abrir una sesión de
+          pósters, optamos por cerrar esta vía de participación.
+        </p>
+
+        {% if self._TemplateReference__context.resolve('Aceptada') | trim | upper == 'TRUE' %}
+        <p>
+          Nos complace informarle que su contribución ha sido <strong>aceptada</strong> como
+          lightning talk (presentación oral de 10 minutos).
+        </p>
+
+        <div
+          style="margin:20px 0; padding:18px 20px; background:#eef6fc; border-left:4px solid #0b4f8a; color:#123b63;">
+          <div style="font-weight:700; margin-bottom:8px;">{{ self._TemplateReference__context.resolve('Título') | e }}
+          </div>
+          <div><strong>Horario:</strong> {{ self._TemplateReference__context.resolve('Horario_Bloque') | e }}</div>
+        </div>
+
+        <p>Para una adecuada coordinación, le agradeceremos considerar los siguientes requisitos:</p>
+
+          <ul style="margin:0 0 20px; padding-left:24px;">
+            <li style="margin-bottom:12px;">
+              <strong>Confirmación de participación:</strong> Por favor, responda este correo confirmando su
+              participación hasta el <strong>miércoles 5 de agosto, a las 16:00 hrs.</strong>
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Biografía breve:</strong> Por favor, responda este correo enviando una biografía corta de un máximo
+              de <strong>80 palabras</strong>, con la cual será presentado/a durante el evento.
+            </li>
+          <li style="margin-bottom:12px;">
+            <strong>Envío de diapositivas:</strong> Le recordamos enviar su presentación en formato
+            <strong>PPT o PDF</strong> hasta el <strong>sábado 8 de agosto, a las 23:59 hrs.</strong>, para realizar
+            las pruebas técnicas y coordinar oportunamente la producción de su bloque. Utilice formato
+            <strong>16:9</strong> y asegúrese de que audios, videos y fuentes queden incrustados en el
+            archivo. Si el archivo excede los <strong>20 MB</strong>, proporcione un enlace de descarga,
+            idealmente mediante Google Drive o WeTransfer. Por favor, entregue la presentación respondiendo
+            este correo, o escribiendo directamente a
+            <a href="mailto:calvarez@uandes.cl" style="color:#0b4f8a;">calvarez@uandes.cl</a>,
+            con copia a <a href="mailto:afuenzalida@alianzaciberseguridad.cl"
+              style="color:#0b4f8a;">afuenzalida@alianzaciberseguridad.cl</a>.
+          </li>
+          <li>
+            <strong>Duración:</strong> La presentación puede durar un máximo de <strong>10 minutos</strong>.
+          </li>
+          <li style="margin-top:12px;">
+            <strong>Presentación en el lugar:</strong> Le agradeceremos presentarse en el Aula Magna
+            de Biblioteca UANDES al menos <strong>15 minutos antes de su participación</strong>, para
+            coordinar oportunamente los aspectos técnicos y de producción.
+          </li>
+          <li style="margin-top:12px;">
+            <strong>Foto oficial:</strong> La foto oficial del evento se tomará durante el coffee break de
+            la mañana, de 11:25 a 11:45 hrs. Invitamos cordialmente a todos los speakers a hacerse presentes
+            en la foto.
+          </li>
+          <li style="margin-top:12px;">
+            <strong>Certificado:</strong> Si requiere un certificado de participación como speaker,
+            por favor confírmenoslo en la respuesta a este correo.
+          </li>
+        </ul>
+
+        <p>
+          Muchas gracias por su valiosa contribución. Quedamos atentos a su respuesta con la biografía y las
+          diapositivas solicitadas.
+        </p>
+        {% else %}
+        <p>
+          Lamentamos informarle que, en esta oportunidad, su contribución titulada
+          <strong>“{{ self._TemplateReference__context.resolve('Título') | e }}”</strong>
+          no ha sido seleccionada para los lightning talks del programa.
+        </p>
+
+        <p>
+          Esperamos contar con su participación en la próxima edición de la Jornada Chilena de Ciberseguridad en Salud.
+        </p>
+
+        <p>Muchas gracias nuevamente por su interés y aporte a esta iniciativa.</p>
+        {% endif %}
+
+        <p style="margin-bottom:0;">
+          Saludos cordiales,<br><br>
+          <strong>Comité Organizador</strong><br>
+          <br>
+          Tercera Jornada Chilena de Ciberseguridad en Salud
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

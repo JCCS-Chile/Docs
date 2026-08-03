@@ -1,0 +1,8 @@
+To: {{ self._TemplateReference__context.resolve('Email') | trim }}
+From: Claudio Álvarez <calvarez1@miuandes.cl>
+Reply-To: calvarez1@miuandes.cl
+Subject: {% if self._TemplateReference__context.resolve('Aceptada') | trim | upper == 'TRUE' %}Contribución aceptada — Tercera Jornada Chilena de Ciberseguridad en Salud{% else %}Resultado de contribución — Tercera Jornada Chilena de Ciberseguridad en Salud{% endif %}
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+{% include 'template-notification-20260803.mailmerge.html' %}

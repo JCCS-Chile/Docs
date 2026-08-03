@@ -92,3 +92,30 @@ es el número de mensaje que falta por enviar.
 - `Entrega Presentación=TRUE` muestra el recordatorio de enviar PPT o PDF;
   `FALSE` lo oculta.
 - Los saltos de línea de `Participación Bloque/Panel` se convierten en `<br>`.
+
+## Notificaciones de resultado CFP
+
+Las plantillas en `cfp/template-notification-20260803.email.mailmerge` y
+`cfp/template-notification-20260803.mailmerge.html` notifican el resultado de la
+convocatoria usando `cfp/2026-cfp_speaker-info.csv`.
+
+- Los CSV real y de prueba (`cfp/2026-cfp_speaker-info.csv` y
+  `cfp/2026-cfp-test-recipients.csv`) contienen datos personales y están
+  excluidos del repositorio.
+- La columna `Aceptada` determina el contenido: `TRUE` envía la notificación de
+  aceptación y `FALSE` la de no aceptación.
+- Para contribuciones aceptadas, la plantilla personaliza el título y horario de
+  presentación; además solicita una biografía de hasta 80 palabras y las
+  diapositivas antes del sábado 8 de agosto a las 23:59 hrs.
+- La plantilla no debe enviarse sin previsualizar cada una de las dos ramas.
+
+Previsualización local, sin envío SMTP:
+
+```bash
+.venv-mailmerge/bin/mailmerge \
+  --dry-run \
+  --template cfp/template-notification-20260803.email.mailmerge \
+  --database cfp/2026-cfp-test-recipients.csv \
+  --config mailmerge_server.conf \
+  --output-format text
+```
