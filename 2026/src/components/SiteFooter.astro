@@ -7,7 +7,6 @@ const navItems = [
   ["La Jornada", `${basePath}#sobre`],
   ["Temas", `${basePath}#temas`],
   ["Programa", `${basePath}#programa`],
-  ["Convocatoria", `${basePath}#convocatoria`],
   ["Sede", `${basePath}#sede`],
 ];
 
@@ -55,7 +54,6 @@ const logos = [
       <div>
         <p class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase mb-5">Participar</p>
         <div class="space-y-3">
-          <a href={`${basePath}CFP/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Enviar propuesta</a>
           {registrationSite
             ? <a href={registrationSite} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Inscribirse</a>
             : <a href={`${basePath}CFP/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Inscribirse</a>
