@@ -12,3 +12,5 @@
 /2026/mailings/speakers/2026-speaker-test-recipients.csv
 /2026/mailings/cfp/2026-cfp_speaker-info.csv
 /2026/mailings/cfp/2026-cfp-test-recipients.csv
+/2026/mailings/speakers/*.csv
+/2026/mailings/cfp/*.csv

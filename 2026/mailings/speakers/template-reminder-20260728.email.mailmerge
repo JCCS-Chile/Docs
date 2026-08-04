@@ -1,7 +1,7 @@
 To: {{ self._TemplateReference__context.resolve('Correo Electrónico Directo') | trim or self._TemplateReference__context.resolve('Correo Representante') | trim }}
 From: Claudio Álvarez <calvarez1@miuandes.cl>
 Reply-To: calvarez1@miuandes.cl
-Subject: Recordatorio de participación — Tercera Jornada Chilena de Ciberseguridad en Salud
+Subject: [Acción Solicitada] Tercera Jornada Chilena de Ciberseguridad en Salud - Recordatorio de participación
 MIME-Version: 1.0
 Content-Type: text/html; charset=UTF-8
 
