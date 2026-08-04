@@ -227,6 +227,10 @@ body {
   margin: -0.5rem 0 2rem;
 }
 
+.hero-sponsorship {
+  max-width: 47rem;
+}
+
 .state-sponsors a {
   display: flex;
   align-items: center;
@@ -249,6 +253,13 @@ body {
 .state-sponsors a:focus-visible {
   outline: 3px solid rgba(14, 165, 233, 0.4);
   outline-offset: 0.4rem;
+}
+
+@media (max-width: 640px) {
+  .state-sponsors {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
 .sponsors-primary,
