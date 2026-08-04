@@ -110,6 +110,110 @@ body {
   color: #ffffff;
 }
 
+.nav-link-priorities {
+  color: #0369a1;
+  font-weight: 700;
+}
+
+.community-priorities {
+  position: relative;
+  scroll-margin-top: 5.75rem;
+  overflow: hidden;
+  padding: 3.5rem 0;
+  background: linear-gradient(115deg, #075985, #0369a1 58%, #0e7490);
+  color: #ffffff;
+}
+
+.community-priorities::after {
+  position: absolute;
+  top: -7rem;
+  right: -5rem;
+  width: 22rem;
+  height: 22rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  content: "";
+}
+
+.community-priorities__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.community-priorities__eyebrow {
+  margin: 0 0 0.75rem;
+  color: #bae6fd;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.community-priorities h2 {
+  margin: 0 0 0.9rem;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.community-priorities p:not(.community-priorities__eyebrow) {
+  max-width: 46rem;
+  margin: 0;
+  color: #e0f2fe;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.community-priorities__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: 0.7rem;
+  background: #ffffff;
+  color: #075985;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(8, 47, 73, 0.22);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.community-priorities__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(8, 47, 73, 0.32);
+}
+
+.community-priorities__button:focus-visible {
+  outline: 3px solid #fbbf24;
+  outline-offset: 0.25rem;
+}
+
+@media (max-width: 700px) {
+  .community-priorities {
+    padding: 2.75rem 0;
+  }
+
+  .community-priorities__content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .community-priorities__button {
+    width: 100%;
+  }
+}
+
 .sponsors-showcase {
   display: flex;
   flex-direction: column;

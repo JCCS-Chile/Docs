@@ -7,6 +7,7 @@ import Schedule from "../components/Schedule.astro";
 import Speakers from "../components/Speakers.astro";
 import Sponsors from "../components/Sponsors.astro";
 import Countdown from "../components/Countdown.jsx";
+import CommunityPriorities from "../components/CommunityPriorities.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { contactEmail, registrationSite } from "../config/site.js";
 import pageHtml from "../page.html?raw";
@@ -35,7 +36,8 @@ const homeContent = applySiteConfig(pageHtml)
   .replace(/<header[\s\S]*?<\/header>\s*/, "")
   .replace(/\s*<footer[\s\S]*?<\/footer>\s*/, "");
 
-const [homeContentBeforeSpeakers, contentAfterSpeakersMarker] = homeContent.split("<!-- SPEAKERS -->");
+const [homeContentBeforePriorities, contentAfterPrioritiesMarker] = homeContent.split("<!-- COMMUNITY PRIORITIES -->");
+const [homeContentBeforeSpeakers, contentAfterSpeakersMarker] = contentAfterPrioritiesMarker.split("<!-- SPEAKERS -->");
 const [homeContentBeforeSponsors, contentAfterSponsorsMarker] = contentAfterSpeakersMarker.split("<!-- SPONSORS -->");
 const [homeContentBeforeOrganizers, contentAfterOrganizersMarker] = contentAfterSponsorsMarker.split("<!-- ORGANIZERS -->");
 const [homeContentBeforeTeam, contentAfterTeamMarker] = contentAfterOrganizersMarker.split("<!-- ORGANIZING TEAM -->");
@@ -45,6 +47,8 @@ const [homeContentBeforeSchedule, homeContentAfterSchedule] = contentAfterTeamMa
 <SiteLayout basePath="./">
   <main class="relative">
     <SiteHeader basePath="./" />
+    <Fragment set:html={homeContentBeforePriorities} />
+    <CommunityPriorities />
     <Fragment set:html={homeContentBeforeSpeakers} />
     <Speakers basePath="./" />
     <Fragment set:html={homeContentBeforeSponsors} />
