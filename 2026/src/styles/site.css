@@ -223,7 +223,7 @@ body {
 .state-sponsors {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 0.6em;
   margin: -0.5rem 0 2rem;
 }
 
@@ -258,7 +258,7 @@ body {
 @media (max-width: 640px) {
   .state-sponsors {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.6em;
   }
 }
 
@@ -286,6 +286,9 @@ body {
 }
 
 .sponsors-secondary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 150px));
+  justify-content: center;
   gap: 2rem clamp(3rem, 9vw, 7rem);
   margin-top: clamp(3.5rem, 7vw, 5.5rem);
 }
@@ -356,6 +359,11 @@ body {
 }
 
 @media (max-width: 640px) {
+  .sponsors-secondary {
+    grid-template-columns: repeat(2, minmax(0, 80px));
+    gap: 1.5rem clamp(2rem, 10vw, 3rem);
+  }
+
   .sponsors-secondary img {
     width: 80px;
   }

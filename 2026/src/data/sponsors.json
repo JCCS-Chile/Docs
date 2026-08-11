@@ -47,5 +47,18 @@
     "logo": "logo-trendtic-rbg-500px.png",
     "tier": "secondary",
     "width": 200
+  },
+  {
+    "name": "Resility",
+    "url": "https://www.resility.io/",
+    "logo": "resility-dark-font.png",
+    "tier": "secondary",
+    "width": 200
+  },
+  {
+    "name": "PRECISION-AI",
+    "logo": "precision-ai.png",
+    "tier": "secondary",
+    "width": 200
   }
 ]
