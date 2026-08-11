@@ -1,8 +1,6 @@
 ---
 const { basePath = "./" } = Astro.props;
 
-import { contactEmail, registrationSite } from '../config/site.js';
-
 const navItems = [
   ["La Jornada", `${basePath}#sobre`],
   ["Temas", `${basePath}#temas`],
@@ -52,15 +50,8 @@ const logos = [
         </ul>
       </div>
       <div>
-        <p class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase mb-5">Participar</p>
+        <p class="font-mono text-[10px] text-white/30 tracking-[0.2em] uppercase mb-5">Información</p>
         <div class="space-y-3">
-          {registrationSite
-            ? <a href={registrationSite} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Inscribirse</a>
-            : <a href={`${basePath}CFP/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Inscribirse</a>
-          }
-          {contactEmail && (
-            <a href={`mailto:${contactEmail}`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Patrocinios</a>
-          )}
           <a href={`${basePath}privacy/`} class="flex items-center gap-2 font-body text-sm text-white/60 hover:text-white transition-colors">Privacidad</a>
         </div>
       </div>

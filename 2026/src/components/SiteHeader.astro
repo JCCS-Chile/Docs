@@ -1,8 +1,6 @@
 ---
 const { basePath = "./" } = Astro.props;
 
-import { registrationSite } from '../config/site.js';
-
 const homeHref = basePath;
 const navItems = [
   ["Aporta tus ideas", `${basePath}#prioridades-estrategicas`, true],
@@ -32,10 +30,6 @@ const navItems = [
         </summary>
         <nav class="mobile-nav-panel" aria-label="Navegación móvil">
           {navItems.map(([label, href]) => <a href={href}>{label}</a>)}
-          {registrationSite
-            ? <a class="mobile-nav-register sm:hidden" href={registrationSite} target="_blank" rel="noopener noreferrer">Regístrate</a>
-            : <a class="mobile-nav-register sm:hidden" href={`${basePath}CFP/`}>Regístrate</a>
-          }
         </nav>
       </details>
       <a href={homeHref} class="flex items-center gap-3 group">
@@ -63,10 +57,6 @@ const navItems = [
       <div class="linkedin-share-plugin" aria-label="Compartir JCCS 2026 en LinkedIn">
         <script type="IN/Share" data-url="https://www.jornadacibersalud.cl/2026/"></script>
       </div>
-      {registrationSite
-        ? <a href={registrationSite} class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5" target="_blank" rel="noopener noreferrer">Regístrate</a>
-        : <a href={`${basePath}CFP/`} class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5">Regístrate</a>
-      }
     </div>
   </div>
 </header>
