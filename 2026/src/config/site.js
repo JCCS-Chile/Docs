@@ -11,11 +11,8 @@ export const cfpFormUrl = (
   typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.PUBLIC_CFP_FORM_URL
 ) ? import.meta.env.PUBLIC_CFP_FORM_URL : '';
 
-export const communityPrioritiesUrl = 'https://inguandes.typeform.com/jccs-2026-pe?utm_source=web_jccs&utm_medium=homepage&utm_campaign=prioridades_2026_2027';
-
 export default {
   cfpFormUrl,
-  communityPrioritiesUrl,
   contactEmail,
   registrationSite,
 };

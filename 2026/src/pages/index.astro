@@ -42,13 +42,13 @@ const [homeContentBeforeSponsors, contentAfterSponsorsMarker] = contentAfterSpea
 const [homeContentBeforeOrganizers, contentAfterOrganizersMarker] = contentAfterSponsorsMarker.split("<!-- ORGANIZERS -->");
 const [homeContentBeforeTeam, contentAfterTeamMarker] = contentAfterOrganizersMarker.split("<!-- ORGANIZING TEAM -->");
 const [homeContentBeforeSchedule, homeContentAfterSchedule] = contentAfterTeamMarker.split("<!-- SCHEDULE -->");
+const [homeContentAfterScheduleBeforePriorities, homeContentAfterPriorities] = homeContentAfterSchedule.split("</section>");
 ---
 
 <SiteLayout basePath="./">
   <main class="relative">
     <SiteHeader basePath="./" />
     <Fragment set:html={homeContentBeforePriorities} />
-    <CommunityPriorities />
     <Fragment set:html={homeContentBeforeSpeakers} />
     <Speakers basePath="./" />
     <Fragment set:html={homeContentBeforeSponsors} />
@@ -59,7 +59,9 @@ const [homeContentBeforeSchedule, homeContentAfterSchedule] = contentAfterTeamMa
     <OrganizingTeam basePath="./" />
     <Fragment set:html={homeContentBeforeSchedule} />
     <Schedule />
-    <Fragment set:html={homeContentAfterSchedule} />
+    <Fragment set:html={`${homeContentAfterScheduleBeforePriorities}</section>`} />
+    <CommunityPriorities />
+    <Fragment set:html={homeContentAfterPriorities} />
     <SiteFooter basePath="./" />
   </main>
   <Countdown client:load />

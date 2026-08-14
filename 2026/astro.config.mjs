@@ -5,6 +5,9 @@ const base = process.env.PUBLIC_BASE_PATH || undefined;
 
 export default defineConfig({
   base,
+  devToolbar: {
+    enabled: false,
+  },
   integrations: [react()],
   output: "static",
   site: "https://jccs-chile.github.io",

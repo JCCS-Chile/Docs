@@ -1,21 +1,49 @@
----
-import { communityPrioritiesUrl } from "../config/site.js";
----
-
 <section id="prioridades-estrategicas" class="community-priorities" aria-labelledby="prioridades-title">
-  <div class="community-priorities__content max-w-7xl mx-auto px-6 lg:px-8">
-    <div>
-      <p class="community-priorities__eyebrow">Consulta a la comunidad</p>
-      <h2 id="prioridades-title">Definamos las prioridades estratégicas 2026–2027</h2>
-      <p>Antes de la Jornada, queremos recoger las ideas de la comunidad para fortalecer la ciberseguridad y la protección de datos en el ecosistema de salud chileno. Comparte tus prioridades en una encuesta breve —te tomará menos de 3 minutos—. Los resultados se presentarán durante el evento.</p>
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <header class="community-priorities__intro">
+      <p class="community-priorities__eyebrow">Resultados de la consulta a la comunidad</p>
+      <h2 id="prioridades-title">Prioridades estratégicas 2026–2027</h2>
+      <p>51 personas distribuyeron 100 puntos entre seis lineamientos estratégicos. Estos resultados reflejan las prioridades que surgieron de la comunidad para fortalecer la ciberseguridad y la protección de datos en salud.</p>
+    </header>
+
+    <div class="community-priorities__grid">
+      <figure class="community-priorities__infographic">
+        <img src="./assets/images/prioridades-estratégicas/infografia-prioridades.png" alt="Infografía con los seis ejes estratégicos de ciberseguridad y protección de datos en salud" loading="lazy" />
+        <figcaption>Los seis lineamientos estratégicos priorizados por la comunidad.</figcaption>
+      </figure>
+
+      <section class="community-priorities__ranking" aria-labelledby="prioridades-ranking-title">
+        <div class="community-priorities__ranking-heading">
+          <h3 id="prioridades-ranking-title">Cómo se priorizaron</h3>
+          <p>5.100 puntos asignados en total</p>
+        </div>
+        <ol>
+          <li>
+            <div class="community-priorities__rank-label"><span>1</span><strong>Desarrollar una cultura de ciberseguridad y fortalecer las capacidades de las personas.</strong><b>1.215</b></div>
+            <div class="community-priorities__bar"><span style="--priority-width: 100%"></span></div>
+          </li>
+          <li>
+            <div class="community-priorities__rank-label"><span>2</span><strong>Proteger y gobernar adecuadamente los datos clínicos y personales.</strong><b>1.080</b></div>
+            <div class="community-priorities__bar"><span style="--priority-width: 88.9%"></span></div>
+          </li>
+          <li>
+            <div class="community-priorities__rank-label"><span>3</span><strong>Mejorar la gestión de identidades, accesos y controles esenciales de seguridad.</strong><b>755</b></div>
+            <div class="community-priorities__bar"><span style="--priority-width: 62.1%"></span></div>
+          </li>
+          <li>
+            <div class="community-priorities__rank-label"><span>4</span><strong>Fortalecer la gobernanza, el cumplimiento regulatorio y los estándares comunes de ciberseguridad.</strong><b>720</b></div>
+            <div class="community-priorities__bar"><span style="--priority-width: 59.3%"></span></div>
+          </li>
+          <li>
+            <div class="community-priorities__rank-label"><span>5</span><strong>Fortalecer la ciberresiliencia, la respuesta a incidentes y la continuidad operacional.</strong><b>705</b></div>
+            <div class="community-priorities__bar"><span style="--priority-width: 58%"></span></div>
+          </li>
+          <li>
+            <div class="community-priorities__rank-label"><span>6</span><strong>Gestionar los riesgos tecnológicos emergentes: terceros, IoMT, infraestructura e inteligencia artificial.</strong><b>625</b></div>
+            <div class="community-priorities__bar"><span style="--priority-width: 51.4%"></span></div>
+          </li>
+        </ol>
+      </section>
     </div>
-    <a
-      class="community-priorities__button"
-      href={communityPrioritiesUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Aportar mis ideas sobre prioridades estratégicas 2026–2027; abre la encuesta en una nueva pestaña"
-      title="Aportar mis ideas sobre prioridades estratégicas 2026–2027"
-    >Aportar mis ideas</a>
   </div>
 </section>
