@@ -1,0 +1,618 @@
+---
+const { basePath = "./" } = Astro.props;
+
+const photos = [
+  "Foto oficial grupal de asistentes a la JCCS 2026 en el auditorio.",
+  "Público asistente en la apertura de la JCCS 2026.",
+  "Área de encuentro y stands durante la Jornada.",
+  "Conferencista principal Felipe Harboe e integrantes de la organización reunidos en el acceso al evento.",
+  "Fotografía de autoridades en el hall principal.",
+  "Marco Antonio Álvarez dando la bienvenida desde el escenario de la JCCS 2026.",
+  "Directora (S) de ANCI Michelle Bordachar en acto de apertura.",
+  "Charla de Cristián Donaire, CISO de RedSalud.",
+  "Charla del Dr. José Fernández de Rayen Salud.",
+  "Charla de Romina Torres de UAI, CENIA, CPS-RTC, y DO.",
+  "Charla del Dr. Jaime de los Hoyos.",
+  "Charla de Juan Alberto Lecaros.",
+  "Gabriel Bergel en workshop de ciberseguridad en salud.",
+  "Claudio Álvarez dirigiéndose al público durante el Cierre Estratégico.",
+  "Conferencia de Felipe Harboe.",
+  "Conferencia de Felipe Harboe.",
+  "Panel de expertos con Felipe Harboe, Lorena Donoso, Jocelyn Arteaga y Javier Mora, moderado por Pablo Antillanca.",
+  "Almuerzo de speakers y organizadores.",
+  "Estudiantes de Ingeniería Civil en Ciencias de la Computación UANDES junto con Claudio Álvarez..",
+  "Stand de la Dirección de Admisión de Postgrados y Educación Continua (DAPE).",
+  "Asistentes a la jornada reunidos en el espacio de sponsors y coffee break.",
+  "Cristián Donaire y asistentes en stand de ITMore Group y Veeam.",
+  "Foto grupal de asistentes a la JCCS.",
+  "Organizadores junto con asistentes a la JCCS.",
+  "Speakers, organizadores y asistentes a la JCCS.",
+  "Felipe Harboe, Michelle Bordachar, y Narciso Basic.",
+  "Ministra de Salud, Dra. May Chomalí, dando un saludo grabado a los presentes.",
+  "Vista exterior de la Biblioteca UANDES, sede de la JCCS 2026.",
+  "Acceso principal a la Biblioteca UANDES, sede de la JCCS 2026.",
+].map((alt, index) => {
+  const number = String(index + 1).padStart(2, "0");
+
+  return {
+    alt,
+    full: `${basePath}assets/images/gallery/full/jccs-2026-${number}.webp`,
+    thumb: `${basePath}assets/images/gallery/thumbs/jccs-2026-${number}.webp`,
+  };
+});
+---
+
+<section id="registro-video" class="media-highlights" aria-labelledby="registro-video-title" data-media-highlights>
+  <div class="media-highlights__container">
+    <div class="media-highlights__intro">
+      <div class="section-label mb-5 mx-auto justify-center">Registro de la Jornada</div>
+      <h2 id="registro-video-title">
+        Revive la <span class="gradient-text">JCCS 2026</span>
+      </h2>
+      <p>Explora el registro completo en video y una selección de momentos de la 3ª Jornada Chilena de Ciberseguridad en Salud.</p>
+    </div>
+
+    <div class="media-tabs" role="tablist" aria-label="Registro de la Jornada">
+      <button
+        id="media-tab-video"
+        class="media-tabs__button"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="media-panel-video"
+        data-media-tab="video"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="6 3 20 12 6 21 6 3"></polygon>
+        </svg>
+        Video completo
+      </button>
+      <button
+        id="media-tab-gallery"
+        class="media-tabs__button"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="media-panel-gallery"
+        tabindex="-1"
+        data-media-tab="gallery"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+          <circle cx="9" cy="9" r="2"></circle>
+          <path d="m21 15-3.5-3.5L7 21"></path>
+        </svg>
+        <span>Galería<span class="media-tabs__desktop-label"> fotográfica</span></span>
+        <span class="media-tabs__count">29</span>
+      </button>
+    </div>
+
+    <div id="media-panel-video" class="media-panel" role="tabpanel" aria-labelledby="media-tab-video" data-media-panel="video">
+      <div class="media-video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/IGunF5GxovY"
+          title="Registro completo de la Jornada Chilena de Ciberseguridad en Salud 2026"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="media-panel__note">¿No puedes ver el video? <a href="https://www.youtube.com/watch?v=IGunF5GxovY" target="_blank" rel="noopener noreferrer">Ábrelo en YouTube</a>.</p>
+    </div>
+
+    <div id="media-panel-gallery" class="media-panel" role="tabpanel" aria-labelledby="media-tab-gallery" data-media-panel="gallery" hidden>
+      <div class="photo-gallery" aria-label="Galería fotográfica JCCS 2026">
+        {photos.map((photo, index) => (
+          <button
+            class:list={["photo-gallery__item", { "photo-gallery__item--featured": index === 0 }]}
+            type="button"
+            data-gallery-index={index}
+            data-full={photo.full}
+            data-alt={photo.alt}
+            aria-label={`Abrir fotografía ${index + 1} de ${photos.length}: ${photo.alt}`}
+          >
+            <img src={photo.thumb} alt={photo.alt} width="720" height="540" loading="lazy" decoding="async" />
+            <span class="photo-gallery__zoom" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m20 20-4-4M11 8v6M8 11h6"></path>
+              </svg>
+            </span>
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <dialog class="photo-lightbox" aria-labelledby="photo-lightbox-caption" data-photo-lightbox>
+    <div class="photo-lightbox__surface">
+      <button class="photo-lightbox__close" type="button" aria-label="Cerrar fotografía" data-lightbox-close>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18M6 6l12 12"></path>
+        </svg>
+      </button>
+      <button class="photo-lightbox__nav photo-lightbox__nav--previous" type="button" aria-label="Fotografía anterior" data-lightbox-previous>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+      </button>
+      <figure>
+        <img src="" alt="" width="2048" height="1365" data-lightbox-image />
+        <figcaption id="photo-lightbox-caption">
+          <span data-lightbox-caption></span>
+          <span class="photo-lightbox__counter" data-lightbox-counter></span>
+        </figcaption>
+      </figure>
+      <button class="photo-lightbox__nav photo-lightbox__nav--next" type="button" aria-label="Fotografía siguiente" data-lightbox-next>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m9 18 6-6-6-6"></path>
+        </svg>
+      </button>
+    </div>
+  </dialog>
+</section>
+
+<script>
+  const initializeMediaHighlights = () => {
+    document.querySelectorAll("[data-media-highlights]").forEach((section) => {
+      if (section.dataset.initialized === "true") return;
+      section.dataset.initialized = "true";
+
+      const tabs = Array.from(section.querySelectorAll("[data-media-tab]"));
+      const panels = Array.from(section.querySelectorAll("[data-media-panel]"));
+
+      const selectTab = (selectedTab) => {
+        tabs.forEach((tab) => {
+          const isSelected = tab === selectedTab;
+          tab.setAttribute("aria-selected", String(isSelected));
+          tab.tabIndex = isSelected ? 0 : -1;
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.dataset.mediaPanel !== selectedTab.dataset.mediaTab;
+        });
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => selectTab(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+          event.preventDefault();
+          const direction = event.key === "ArrowRight" ? 1 : -1;
+          const nextTab = tabs[(index + direction + tabs.length) % tabs.length];
+          selectTab(nextTab);
+          nextTab.focus();
+        });
+      });
+
+      const dialog = section.querySelector("[data-photo-lightbox]");
+      const galleryButtons = Array.from(section.querySelectorAll("[data-gallery-index]"));
+      const lightboxImage = dialog.querySelector("[data-lightbox-image]");
+      const lightboxCaption = dialog.querySelector("[data-lightbox-caption]");
+      const lightboxCounter = dialog.querySelector("[data-lightbox-counter]");
+      let currentIndex = 0;
+
+      const showPhoto = (index) => {
+        currentIndex = (index + galleryButtons.length) % galleryButtons.length;
+        const button = galleryButtons[currentIndex];
+        lightboxImage.src = button.dataset.full;
+        lightboxImage.alt = button.dataset.alt;
+        lightboxCaption.textContent = button.dataset.alt;
+        lightboxCounter.textContent = `${currentIndex + 1} / ${galleryButtons.length}`;
+      };
+
+      galleryButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          showPhoto(index);
+          dialog.showModal();
+          document.documentElement.classList.add("lightbox-open");
+        });
+      });
+
+      dialog.querySelector("[data-lightbox-close]").addEventListener("click", () => dialog.close());
+      dialog.querySelector("[data-lightbox-previous]").addEventListener("click", () => showPhoto(currentIndex - 1));
+      dialog.querySelector("[data-lightbox-next]").addEventListener("click", () => showPhoto(currentIndex + 1));
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") showPhoto(currentIndex - 1);
+        if (event.key === "ArrowRight") showPhoto(currentIndex + 1);
+      });
+      dialog.addEventListener("close", () => {
+        document.documentElement.classList.remove("lightbox-open");
+        lightboxImage.removeAttribute("src");
+      });
+    });
+  };
+
+  initializeMediaHighlights();
+  document.addEventListener("astro:page-load", initializeMediaHighlights);
+</script>
+
+<style>
+  .media-highlights {
+    padding: 5rem 0 6rem;
+    border-bottom: 1px solid #f1f5f9;
+    background: #ffffff;
+    scroll-margin-top: 5.5rem;
+  }
+
+  .media-highlights__container {
+    width: min(100% - 3rem, 64rem);
+    margin: 0 auto;
+  }
+
+  .media-highlights__intro {
+    max-width: 44rem;
+    margin: 0 auto 2.25rem;
+    text-align: center;
+  }
+
+  .media-highlights__intro h2 {
+    margin: 0 0 0.75rem;
+    color: #0f2744;
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    font-size: clamp(1.875rem, 4vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+
+  .media-highlights__intro p,
+  .media-panel__note {
+    color: #64748b;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .media-highlights__intro p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .media-tabs {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    gap: 0.35rem;
+    margin: 0 auto 1.5rem;
+    padding: 0.35rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.9rem;
+    background: #f8fafc;
+  }
+
+  .media-tabs__button {
+    display: inline-flex;
+    gap: 0.55rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.65rem;
+    background: transparent;
+    color: #64748b;
+    cursor: pointer;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+  }
+
+  .media-tabs__button svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .media-tabs__button[aria-selected="true"] {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 39, 68, 0.1);
+    color: #075985;
+  }
+
+  .media-tabs__button:focus-visible {
+    outline: 3px solid rgba(14, 165, 233, 0.35);
+    outline-offset: 0.15rem;
+  }
+
+  .media-tabs__count {
+    display: inline-grid;
+    min-width: 1.45rem;
+    height: 1.45rem;
+    padding: 0 0.35rem;
+    place-items: center;
+    border-radius: 999px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.68rem;
+  }
+
+  .media-video {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border-radius: 1rem;
+    background: #0f2744;
+    box-shadow: 0 20px 45px rgba(15, 39, 68, 0.18);
+  }
+
+  .media-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .media-panel__note {
+    margin: 1.25rem 0 0;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .media-panel__note a {
+    color: #0369a1;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .photo-gallery__item {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    border-radius: 0.8rem;
+    background: #e2e8f0;
+    cursor: zoom-in;
+    aspect-ratio: 4 / 3;
+  }
+
+  .photo-gallery__item--featured {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .photo-gallery__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 300ms ease, filter 300ms ease;
+  }
+
+  .photo-gallery__item:hover img,
+  .photo-gallery__item:focus-visible img {
+    filter: brightness(0.8);
+    transform: scale(1.035);
+  }
+
+  .photo-gallery__item:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 0.2rem;
+  }
+
+  .photo-gallery__zoom {
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.65rem;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    background: rgba(15, 39, 68, 0.72);
+    color: #ffffff;
+    opacity: 0;
+    transform: translateY(0.25rem);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .photo-gallery__zoom svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .photo-gallery__item:hover .photo-gallery__zoom,
+  .photo-gallery__item:focus-visible .photo-gallery__zoom {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .photo-lightbox {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(3, 12, 24, 0.94);
+    color: #ffffff;
+  }
+
+  .photo-lightbox::backdrop {
+    background: rgba(3, 12, 24, 0.94);
+  }
+
+  .photo-lightbox__surface {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 4rem minmax(0, 1fr) 4rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 4rem 1.5rem 1.5rem;
+  }
+
+  .photo-lightbox figure {
+    display: flex;
+    min-width: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .photo-lightbox figure img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 8rem);
+    border-radius: 0.5rem;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
+  }
+
+  .photo-lightbox figcaption {
+    display: flex;
+    width: min(100%, 56rem);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    color: #e2e8f0;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.82rem;
+  }
+
+  .photo-lightbox__counter {
+    flex: none;
+    color: #7dd3fc;
+    font-family: var(--font-mono), ui-monospace, monospace;
+  }
+
+  .photo-lightbox__close,
+  .photo-lightbox__nav {
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease;
+  }
+
+  .photo-lightbox__close:hover,
+  .photo-lightbox__nav:hover,
+  .photo-lightbox__close:focus-visible,
+  .photo-lightbox__nav:focus-visible {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+  }
+
+  .photo-lightbox__close {
+    position: absolute;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .photo-lightbox__nav {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .photo-lightbox__close svg,
+  .photo-lightbox__nav svg {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  @media (max-width: 700px) {
+    .media-highlights {
+      padding: 4rem 0;
+    }
+
+    .media-highlights__container {
+      width: min(100% - 2rem, 64rem);
+    }
+
+    .media-tabs {
+      width: 100%;
+    }
+
+    .media-tabs__button {
+      flex: 1;
+      padding: 0.6rem 0.65rem;
+      font-size: 0.8rem;
+    }
+
+    .media-tabs__desktop-label {
+      display: none;
+    }
+
+    .photo-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+    }
+
+    .photo-gallery__item--featured {
+      grid-column: span 2;
+      grid-row: auto;
+      aspect-ratio: 16 / 9;
+    }
+
+    .photo-gallery__zoom {
+      opacity: 1;
+      transform: none;
+    }
+
+    .photo-lightbox__surface {
+      display: flex;
+      padding: 4rem 0.75rem 5rem;
+    }
+
+    .photo-lightbox figure img {
+      max-height: calc(100vh - 10rem);
+    }
+
+    .photo-lightbox figcaption {
+      padding: 0 0.25rem;
+      font-size: 0.75rem;
+    }
+
+    .photo-lightbox__nav {
+      position: absolute;
+      z-index: 2;
+      bottom: 0.85rem;
+      width: 2.75rem;
+      height: 2.75rem;
+    }
+
+    .photo-lightbox__nav--previous {
+      left: calc(50% - 3.1rem);
+    }
+
+    .photo-lightbox__nav--next {
+      right: calc(50% - 3.1rem);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .photo-gallery__item img,
+    .photo-gallery__zoom,
+    .media-tabs__button {
+      transition: none;
+    }
+  }
+</style>
+
+<style is:global>
+  html.lightbox-open {
+    overflow: hidden;
+  }
+</style>
