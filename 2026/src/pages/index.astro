@@ -43,7 +43,9 @@ const [homeContentBeforeSponsors, contentAfterSponsorsMarker] = contentAfterSpea
 const [homeContentBeforeOrganizers, contentAfterOrganizersMarker] = contentAfterSponsorsMarker.split("<!-- ORGANIZERS -->");
 const [homeContentBeforeTeam, contentAfterTeamMarker] = contentAfterOrganizersMarker.split("<!-- ORGANIZING TEAM -->");
 const [homeContentBeforeSchedule, homeContentAfterSchedule] = contentAfterTeamMarker.split("<!-- SCHEDULE -->");
-const [homeContentAfterScheduleBeforePriorities, homeContentAfterPriorities] = homeContentAfterSchedule.split("</section>");
+const scheduleSectionEnd = homeContentAfterSchedule.indexOf("</section>");
+const homeContentAfterScheduleBeforePriorities = homeContentAfterSchedule.slice(0, scheduleSectionEnd);
+const homeContentAfterPriorities = homeContentAfterSchedule.slice(scheduleSectionEnd + "</section>".length);
 ---
 
 <SiteLayout basePath="./">
